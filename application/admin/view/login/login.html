@@ -1,0 +1,77 @@
+<!--不用layout-->
+{__NOLAYOUT__}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>登录-锦江饭店后台</title>
+
+    <link rel="stylesheet" href="__PUBLIC__css/admin/ch-ui.admin.css">
+    <link rel="stylesheet" href="__PUBLIC__common/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="__PUBLIC__css/admin/login.css">
+
+    <script src="__PUBLIC__common/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    <script src="__PUBLIC__common/js/jquery.particleground.min.js"></script>
+    <script src="__PUBLIC__js/admin/demo.js"></script>
+
+</head>
+<body>
+<div id="particles">
+    <canvas class="pg-canvas" width="1920" height="923"></canvas>
+    <div class="intro" style="margin-top: -120.5px;">
+
+        <div class="login_box">
+            <!--<h1></h1>-->
+            <h2>锦江饭店 后台管理</h2>
+            <div class="form">
+                <form action="{:url('admin/login/do_login')}" method="post" onsubmit="javascript:return false">
+                    <ul>
+                        <li>
+                            <input type="text" name="username" class="text" id="username"/>
+                            <span><i class="fa fa-user"></i></span>
+                        </li>
+                        <li>
+                            <input type="password" name="password" class="text" id="password"/>
+                            <span><i class="fa fa-lock"></i></span>
+                        </li>
+
+                        <li>
+                            <input class="loginbtn" type="submit" value="立即登录"/>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    $(function(){
+        $(".loginbtn").click(function(){
+            var data = {};
+            data.username = $("#username").val();
+            data.password = $("#password").val();
+            $.ajax({
+                url: "{:url('admin/login/do_login')}",
+                type:"POST",
+                data:data,
+                dataType:'json',
+                success:function (res) {
+                    if(res.state=="success"){
+                        alert('登录成功');
+                        location.href="{:url('admin/index/index')}";
+                    }else{
+                        alert(res.msg);
+                    }
+                }
+            })
+        })
+    })
+</script>

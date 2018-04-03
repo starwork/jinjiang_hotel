@@ -1,0 +1,36 @@
+
+<form  method="post">
+    <div class="result_wrap">
+        <div class="result_content">
+            <table class="list_tab">
+                <tr>
+                    <th>姓名</th>
+                    <th>邮箱</th>
+                    <th>电话</th>
+                    <th>留言时间</th>
+                    <th>留言</th>
+                    <th>操作</th>
+                </tr>
+                {volist name="data" id="v"}
+                <tr class="one">
+                    <td class="tc">{$v.name}</td>
+                    <td class="tc">{$v.email}</td>
+                    <td class="tc">{$v.tel}</td>
+                    <td class="tc">{$v.time}</td>
+                    <td class="tc" title="{$v.content}">{:mb_substr($v.content, 0, 10)}</a></td>
+                    <td class="tc">
+                        <a id="del" class="layui-btn layui-btn-danger layui-btn-xs delete" lay-event="del" href="{:url('admin/message/delete',['id'=>$v.id])}" onclick="return del($(this),'{:url(\'index\')}');">删除</a>
+                    </td>
+                </tr>
+                {/volist}
+            </table>
+            <div class="page_list">
+                {$data->render()}
+            </div>
+        </div>
+    </div>
+</form>
+
+
+</body>
+</html>
