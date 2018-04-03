@@ -22,7 +22,7 @@ class Activity extends Model
 //    内容截取
     public function getContentAttr($value)
     {
-        $value =preg_replace("/<.*?>/",'',$value);
+        $value =preg_replace("/<img.*?>/",'',$value);
         $len = mb_strlen($value);
         if($len>80){
             $value = mb_substr($value,0,80).'...';
