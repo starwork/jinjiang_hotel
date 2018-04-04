@@ -864,7 +864,8 @@ input{outline:none;}
 /*news page1*/
 .news-slide1 {
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+    background-position: center;
 	background-image: url("../../img/news/news-bg.png");
 }
 .news-slide-btn {
@@ -1002,7 +1003,6 @@ input{outline:none;}
 	overflow : hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
-	-webkit-line-clamp:2;
 	-webkit-box-orient: vertical;
 }
 .newspre-detail {
@@ -1013,7 +1013,8 @@ input{outline:none;}
 	padding-right: 26px;
 	border-radius: 13px;
 	background-color: #e4e4e4;
-	position: relative;
+	position: absolute;
+	bottom: 27%;
 	cursor: pointer;
 }
 .add-png {
@@ -1088,7 +1089,7 @@ input{outline:none;}
 	bottom: 0;
 }
 .detail-footer>.footer-up>img {
-	margin-top: 
+	/*margin-top: */
 }
 .detailcon {
 	position: absolute;
@@ -1158,7 +1159,7 @@ input{outline:none;}
 }
 .detailcon-tab>h3 {
 	font-size: 22px;
-	margin-top: 142px ;
+	margin-top: 17px ;
 }
 .detailcon-tab>span {
 	display: inline-block;
@@ -1179,8 +1180,13 @@ input{outline:none;}
 	float: left;
 }
 .detailcon-card-right {
-	width: 62%;
-	float: right;
+	padding-bottom: 1rem;
+}
+.detailcon-card-right img{
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	display: block;
+	width: 60%;
 }
 .detailcon-card-left>img {
 	width: 100%;
