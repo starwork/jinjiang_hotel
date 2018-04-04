@@ -4,7 +4,7 @@
 .contents{width:69%;margin:0 auto;}
 .join_box{padding:2% 0;}
 .join_box h2{font-size:36px;font-weight:bold;color:#a87200;padding-top:66px;padding-bottom:14px;transition:1s all;}
-.join_box h1{font-weight:bold;padding:73% 0;}
+.join_box h1{font-weight:bold;padding:20% 0;}
 .join_right,.join_left{width:50%;float:left;}
 .border{width:49%;float:left;margin-bottom:1%; display: flex;margin-left: 1%;}
 .border p{font-size:20px;padding:6px 0;transition:1s all;}
@@ -12,8 +12,8 @@
 .join_box>div>div>div:hover{background:#a87200;transition:1s all;}
 .join_box>div>div>div:hover h2{color:white;transition:1s all;}
 .join_box>div>div>div:hover p{color:white;transition:1s all;}
-.join_right p{width:100%;height:3rem;background:#a87200;color:#fff;line-height:3rem;padding:0 2%;}
-.join_right>div{padding-left:170px;}
+.join_right span{background: #a87200;color: #fff;padding: 3% 3%;}
+.join_right>div{padding-left:20%;}
 .icon{width:25%;float:left;padding:44px 0 90px 0;}
 .yunying{text-align:center;padding:2% 0;}
 .yunying>p{line-height:2rem;}
@@ -41,14 +41,13 @@
 .fulls{width: 100%;}
 .bd_l{width:65%;}
 .bd_r{width:35%;}
-.left_box{width:30%;float:left;margin-right:20%;margin-top:16%;margin-bottom: 14%;}
+.left_box{width:40%;float:left;margin-right:10%;margin-top:16%;margin-bottom: 14%;}
 .right_box{width:50%;float:left;padding:2% 0;}
 .left_box h1,.right_box h1{font-size:56px;}
-.left_box p{width:44%;float:left;}
+.left_box p{width:50%;float:left;}
 .left_box p span{line-height:2rem;}
 .left_box>div>div{margin-top:2%;}
 .right_box>div{width:48%;float:left;padding:0 1%;}
-.right_box>div>div{height:0;padding-bottom:30%;}
 .right_box>div>div>h3{border-bottom:1px solid #333;line-height:2.5rem;font-size:26px;}
 .right_box>div>div>p{line-height:1.5rem;}
 .swiper_left{width:30%;margin-right:20%;float:left;}
@@ -58,3 +57,34 @@
 .swiper_left h2{font-size:36px;padding:2% 0;}
 .swiper_left p{line-height:1.5rem;}
 .swiper_right img{padding:80px 0;border-radius:4%;}
+
+.mid_box{
+    height: 14rem;
+}
+.f_l .mid_box .ml_box,.f_l .mid_box .mr_box{
+    float:right;
+}
+.f_r .mid_box .ml_box,.f_r .mid_box .mr_box{
+    float:left;
+}
+.mid_box img{
+    height: 12rem;
+    border-radius: 50%;
+    border:4px solid rgba(255,255,255,0.8);
+}
+.mid_box .ttt{
+    padding-top: 4rem;
+    font-size: 24px;
+}
+.ttt p{
+    line-height: 32px;
+}
+.f_l .ttt{
+    padding-right: 2rem;
+}
+.f_r .ttt{
+    padding-left: 2rem;
+}
+.gua{
+padding: 2rem 0;
+}
