@@ -22,20 +22,24 @@ class Activity extends Base
         return Handler::fail();
     }
 
-//分页获取数据
-    public function index($page)
-    {
-        $data = (new ActivityModel())->getIndexList($page);
-        if($data){
-            return Handler::success('获取成功',$data);
-        }
-        return Handler::fail();
-    }
+////分页获取数据
+//    public function index($page)
+//    {
+//        $data = (new ActivityModel())->getIndexList($page);
+//        if($data){
+//            return Handler::success('获取成功',$data);
+//        }
+//        return Handler::fail();
+//    }
 
 //    详情页
     public function detail($id)
     {
-        $data = db('activity')->find($id);
+        $rec = (new ActivityModel())->getRec(3);
+        $this->assign('rec',$rec);
+        $data = (new ActivityModel())->get($id);
+        $content = db('activity')->field('content')->find($id);
+        $this->assign('content',$content);
         $this->assign('data',$data);
         return $this->fetch();
 //        return json($data);

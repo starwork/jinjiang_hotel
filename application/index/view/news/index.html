@@ -65,7 +65,7 @@
 									<span class="ten2"></span>
 								</span>
 								<p>
-									品牌活动
+									加盟活动
 								</p>
 							</div>
 						</div>
@@ -86,42 +86,41 @@
 				<div class="swiper-slide news-slide2">
 					<div class="news-slide2-left">
 						<div class="news-slide2-left-con">
-							<h3>品牌活动</h3>
-							<p>品牌活动是指品牌在某时间，某地点举办PR相关的活动介绍，图片封面展示标题</p>
+							<h3>加盟活动</h3>
+							<p>加盟活动是指品牌在某时间，某地点举办PR相关的活动介绍，图片封面展示标题</p>
 							<span>最近活动简介</span>
 						</div>
 					</div>
 					<div class="news-slide2-right">
 						<div class="swiper-container newspage-siwper2">
 							<div class="swiper-wrapper">
+								{volist name="activity" id="ac"}
 								<div class="swiper-slide">
 									<div class="news-preview">
 										<p class="newspre-day">
-											16
+											{$ac.time.day}
 										</p>
 										<!-- <p class="newspre-status">
 												活动正在报名中......
 										</p> -->
 										<p class="newspre-date">
-											05/2018
+											{$ac.time.month}/{$ac.time.year}
 										</p>
-										<h3 class="newspre-title">5月广州开业新闻</h3>
-										<p class="newspre-addr">地址:中国广州市新港东路382号</p>
-										<img class="newspre-img" src="__PUBLIC__img/news/article1.png" alt="">
-										<p class="newspre-intro">活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简</p>
+										<h3 class="newspre-title">{$ac.title}</h3>
+										<p class="newspre-addr">地址:{$ac.location}</p>
+										<img class="newspre-img" src="__PUBLIC__{$ac.cover_img}" alt="">
+										<div class="newspre-intro">{$ac.content}</div>
+										<a href="{:url('index/activity/detail',['id'=>$ac.id])}">
 										<div class="newspre-detail">
 											<p>查看详情</p>
 											<div class="add-png">
 												<img src="__PUBLIC__img/news/add.png" alt="">
 											</div>
 										</div>
+										</a>
 									</div>
 								</div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide">Slide 4</div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
+								{/volist}
 							</div>
 							<!-- 如果需要分页器 -->
 							<!-- <div class="swiper-pagination"></div> -->
@@ -145,34 +144,32 @@
 					<div class="news-slide2-right">
 						<div class="swiper-container newspage-siwper3">
 							<div class="swiper-wrapper">
+								{volist name="info" id="in"}
 								<div class="swiper-slide">
 									<div class="news-preview">
 										<p class="newspre-day">
-											16
+											{$in.time.day}
 										</p>
 										<!-- <p class="newspre-status">
 												活动正在报名中......
 										</p> -->
 										<p class="newspre-date">
-											05/2018
+											{$in.time.month}/{$in.time.year}
 										</p>
-										<h3 class="newspre-title">5月广州开业新闻</h3>
-										<p class="newspre-addr">地址:中国广州市新港东路382号</p>
-										<img class="newspre-img" src="__PUBLIC__img/news/article1.png" alt="">
-										<p class="newspre-intro">活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简</p>
+										<h3 class="newspre-title">{$in.title}</h3>
+										<img class="newspre-img" src="__PUBLIC__{$in.cover_img}" alt="">
+										<div class="newspre-intro">{$in.content}</div>
+										<a href="{:url('index/info/detail',['id'=>$in.id])}">
 										<div class="newspre-detail">
 											<p>查看详情</p>
 											<div class="add-png">
 												<img src="__PUBLIC__img/news/add.png" alt="">
 											</div>
 										</div>
+										</a>
 									</div>
 								</div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
-								<div class="swiper-slide">Slide 4</div>
-								<div class="swiper-slide">Slide 5</div>
-								<div class="swiper-slide">Slide 6</div>
+								{/volist}
 							</div>
 							<!-- 如果需要分页器 -->
 							<!-- <div class="swiper-pagination"></div> -->

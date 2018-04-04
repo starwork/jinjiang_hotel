@@ -37,9 +37,16 @@ class Info extends Base
 //    详情页
     public function detail($id)
     {
-        $data = db('info')->find($id);
+        $rec = (new InfoModel())->getRec(3);
+        $this->assign('rec',$rec);
+        $data = (new InfoModel())->get($id);
+        $content = db('info')->field('content')->find($id);
+        $this->assign('content',$content);
         $this->assign('data',$data);
         return $this->fetch();
 //        return json($data);
     }
+
+
+
 }
