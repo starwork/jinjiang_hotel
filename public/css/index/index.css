@@ -61,7 +61,6 @@ input{outline:none;}
 	left: 0;
 	z-index: 1000;
 	/*background: white;*/
-	border-bottom:1px solid rgba(0,0,0,0.1);
 }
 .header>img {
 	height: 89px;
@@ -166,7 +165,6 @@ input{outline:none;}
 	text-align: center;
 	letter-spacing: 8px;
 	text-indent: 0.3em;
-	margin-bottom:2%;
 }
 /*swiper1*/
 /*#certify {*/
@@ -199,7 +197,7 @@ input{outline:none;}
 
 #certify .swiper-slide {
 	width:49%;
-	height:520px;
+	height:355px;
 	background: #fff;
 	box-shadow: 0 8px 30px #ddd;
 	background-repeat: no-repeat;
@@ -225,7 +223,7 @@ input{outline:none;}
 }
 .index1-p {
 	width:60%;
-	margin: 5% auto;
+	margin: 3% auto 0 auto;
 	text-indent: 2em;
 	font-size: 18px;
 	/*letter-spacing: 0.2em;*/
@@ -677,7 +675,7 @@ input{outline:none;}
 /*index page7*/
 .indexpage7-up {
 	position: absolute;
-	top: 105px;
+	top:77px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -706,7 +704,7 @@ input{outline:none;}
 .contact-us {
 	width: 80%;
 	height: 80%;
-	margin: 24% 0 0 10%;
+	margin:14% 0 0 10%;
 }
 .contact-us>.ward-t {
 	text-align: left;

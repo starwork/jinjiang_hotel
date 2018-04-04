@@ -250,6 +250,6 @@ $(".ce-btns").mouseleave(function(){
 $(document).ready(function(){
    var h =$(document.body).outerHeight(true);
     if(h>700){
-        $('.header').css({'background':'#fff'})
+        $('.header').css({'background':'#fff','border-bottom':'1px solid rgba(0,0,0,0.1'})
     }
 });
