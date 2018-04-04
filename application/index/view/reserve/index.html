@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>锦江都城酒店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="__PUBLIC__img/index/icon.png">
+    <link rel="stylesheet" href="__PUBLIC__css/reset.css">
+    <link rel="stylesheet" href="public/swiper/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="__PUBLIC__css/index/index.css">
+    <link rel="stylesheet" href="public/swiper/animate.min.css">
+    <script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
+    <script src="__PUBLIC__public/swiper/swiper-4.2.0.min.js"></script>
+    <script src="__PUBLIC__public/swiper/swiper.animate1.0.3.min.js"></script>
+    <script src="__PUBLIC__js/common.js"></script>
+    <style>
+        footer{height: 5.84%;text-align:center;}
+        footer p{font-size:12px;}
+        footer p:nth-child(1){padding-top:6px;line-height: 24px;}
+        .bg_pc{
+            width:100%;
+            height: 94.16%;
+            background:url("img/have_you/bg_pc.jpg")no-repeat;
+            background-position:bottom center;
+            background-size: cover;
+        }
+        .bg_pc>div{width:100%;text-align:center;}
+        .bg_pc>div{padding-top:12%;}
+        .one img{width:26%;}
+        .two img{width:8%;}
+        .three p{color:#c88800;}
+        .three p:nth-child(1){font-size:30.66px;padding:10px 0 6px 0;}
+        .three p:nth-child(2){font-size:24.53px;}
+        .ce-btn{
+            position: fixed;
+            right: 10%;
+            width:160px;
+            height: 170px;
+            top: 1%;
+        }
+        .ce-btn .ce-btns{
+            width:60px;height:60px;
+            background:#e2ad46;
+            margin-bottom:2px;
+            border-radius:50%;
+            cursor: pointer;
+            position: relative;
+            float: left;
+            margin-left:10%;
+        }
+        .ce-btn .ce-btns i{
+            display: inline-block;
+            width:inherit;
+            height: inherit;
+            text-align:center;
+
+        }
+
+        .Alert{
+            width:200px;height: 100px;
+            background:#fff;
+            position:absolute;
+            top:100%;
+            right:0;
+            display: none;
+            border:1px solid #a87200;
+            border-radius:10px;
+        }
+        .Alert:after{
+            content: "";
+            display: inline-block;
+            position:absolute;
+        }
+        .Alert:before{
+            content: "";
+            display: inline-block;
+            position:absolute;
+            right:-10px;
+            top:10px;
+            border-radius:10px;
+        }
+        .bg_pc>div a{display:none;}
+        @media (max-width: 768px) {
+            .bg_pc{
+                background:url("img/have_you/bg_you.png")no-repeat;
+                width: 100%;
+                height:100%;
+                background-size: cover;
+            }
+            footer,.two,.three{display: none;}
+            .bg_pc>div{padding-top:46%;}
+            .one img{width:80%;}
+            .ce-btn{right:1%;width:50px;bottom:25%;top:unset;}
+            .ce-btn .ce-btns{width:45px;height:45px;margin-bottom: 10%;}
+            .Alert{top: 7%;right: 108%;}
+            .Alert:after{ width: 0;height: 0;border: 5px solid transparent;border-left:5px solid #fff;position:absolute;right:-9px;top:10px;}
+            .Alert:before{    content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border: 5px solid transparent;
+                border-left:5px solid #a55c3f;
+                position:absolute;
+                right:-10px;
+                top:10px;}
+            .fove{
+                display: block;
+                width: 96%;
+                background: #d9980f;
+                padding: 4% 0;
+                border-radius: 15px;
+                color: white;
+                margin: 2%;
+            }
+            .bg_pc>div a{width: 40%;
+                margin:40% auto 0 auto;
+                border-radius: 15px;
+                display: block;
+                border: 1px solid #d9980f;}
+        }
+    </style>
+</head>
+<body>
+<script src="__PUBLIC__js/index/index.js"></script>
+<header class="header">
+    <div class="nav">
+        <div class="nav_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav_ul">
+            <li>
+                <a href="#">
+                    <img src="__PUBLIC__img/index/nav1.png" alt="">
+                    <span>品牌介绍</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="__PUBLIC__img/index/nav2.png" alt="">
+                    <span>加盟合作</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="__PUBLIC__img/index/nav3.png" alt="">
+                    <span>品牌活动</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="__PUBLIC__img/index/nav4.png" alt="">
+                    <span>酒店预订</span>
+                </a>
+            </li>
+        </ul>
+        <div class="ce-btn">
+            <div class="ce-btns">
+                <i class="tel"><img src="__PUBLIC__img/join/phone.png" width="100%" alt=""></i>
+                <div class="Alert" style="text-align: center;width:140px;line-height:40px;height:40px;"><a href="tel:021-58356282">021-58356282</a></div>
+            </div>
+            <div class="ce-btns">
+                <i class="weixin"><img src="__PUBLIC__img/join/wx.png" width="100%" alt=""></i>
+                <div class="Alert" style="text-align: center;width:140px;line-height:40px;height:40px;"><a href="tel:021-58356282"></a></div>
+            </div>
+        </div>
+    </div>
+    <img src="__PUBLIC__img/index/logo.png" alt="">
+</header>
+    <div class="bg_pc">
+      <div>
+          <div class="one"><img src="__PUBLIC__img/have_you/font.png" alt=""></div>
+          <div class="two"><img src="__PUBLIC__img/have_you/erweima.png" alt=""></div>
+          <div class="three"><p>酒店预订</p><p>Reserve</p></div>
+          <a href=""><div class="fove"> <p>酒店预订</p><p>Reserve</p></div></a>
+      </div>
+    </div>
+<footer>
+    <p>关于锦江都城 | 加盟合作 | 酒店预订 | 联系我们</p>
+    <p>锦江都城加盟专线：17717393689&nbsp;&nbsp;&nbsp; 加盟邮箱：Mdevelop@jjmph.com</p>
+</footer>
+<script>
+    //    侧边栏
+    $(".ce-btns").mouseover(function(){
+        $(this).css({color:"#a55c3f"}).siblings().css({background:"",color:""});
+        $(".ce-btns .Alert").eq($(this).index()).show();
+    });
+    $(".ce-btns").mouseleave(function(){
+        $(this).css({background:"",color:""});
+        $(".ce-btns .Alert").eq($(this).index()).hide();
+    });
+
+</script>
+</body>
+</html>
