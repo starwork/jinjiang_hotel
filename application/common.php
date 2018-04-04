@@ -34,8 +34,7 @@ function send_mail($frommail, $name, $body = '', $subject = '来自锦江都城�
 
     //Recipients
     $mail->setFrom($mail->Username,$name);
-    $mail->addAddress('nitianhua@qq.com', '锦江都城酒店');     // Add a recipient
-//    $mail->addAddress('Mdevelop@jjmph.com', '锦江都城酒店');     // Add a recipient
+    $mail->addAddress('Mdevelop@jjmph.com', '锦江都城酒店');     // Add a recipient
     $mail->addReplyTo($frommail, $name);
     //Attachments
 //    $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
