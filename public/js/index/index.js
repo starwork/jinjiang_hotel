@@ -54,7 +54,7 @@ $(function() {
         slidesPerView: 'auto',
         centeredSlides: true,
         loop: true,
-        loopedSlides: 5,
+        loopedSlides:5,
         autoplay: 3000,
         preloadImages: true,
         noSwiping: false,
@@ -73,13 +73,13 @@ $(function() {
                     if (Math.abs(slideProgress) > 1) {
                         modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
                     }
-                    translate = slideProgress * modify * (nowwidth / 2) + 'px'; // 设置响应式
-                    scale = 1 - Math.abs(slideProgress) / 6;
+                    translate = slideProgress * modify * (nowwidth /2) + 'px'; // 设置响应式
+                    scale = 1 - Math.abs(slideProgress) /9;
                     zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
                     slide.transform('translateX(' + translate + ') scale(' + scale + ')');
                     slide.css('zIndex', zIndex);
                     slide.css('opacity', 1);
-                    if (Math.abs(slideProgress) > 3) {
+                    if (Math.abs(slideProgress) >5) {
                         slide.css('opacity', 0);
                     }
                 }
@@ -239,10 +239,17 @@ $(function() {
 
 //    侧边栏
 $(".ce-btns").mouseover(function(){
-    $(this).css({color:"#a55c3f"}).siblings().css({background:"",color:""});
+    $(this).css({color:"#a55c3f"}).siblings().css({});
     $(".ce-btns .Alert").eq($(this).index()).show();
 });
 $(".ce-btns").mouseleave(function(){
     $(this).css({background:"",color:""});
     $(".ce-btns .Alert").eq($(this).index()).hide();
 });
+
+$(document).ready(function(){
+   var h =$(document.body).outerHeight(true);
+    if(h>700){
+        $('.header').css({'background':'#fff'})
+    }
+})
