@@ -1223,5 +1223,8 @@ input{outline:none;}
 	margin-left: 5%;
 	font-size: 14px;
 }
+.detailcon-article img{
+	width: 100%;
+}
 
 #certify .swiper-slide-active{transform: translateX(0px) scale(1.3)!important;transition:all 0s!important;}

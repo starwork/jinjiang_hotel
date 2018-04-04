@@ -252,4 +252,4 @@ $(document).ready(function(){
     if(h>700){
         $('.header').css({'background':'#fff'})
     }
-})
+});

@@ -32,5 +32,21 @@
     //     speed:50,
     //     count:200
     // })
+    //    侧边栏
+    $(".ce-btns").mouseover(function(){
+        $(this).css({color:"#a55c3f"}).siblings().css({});
+        $(".ce-btns .Alert").eq($(this).index()).show();
+    });
+    $(".ce-btns").mouseleave(function(){
+        $(this).css({background:"",color:""});
+        $(".ce-btns .Alert").eq($(this).index()).hide();
+    });
+
+    $(document).ready(function(){
+        var h =$(document.body).outerHeight(true);
+        if(h>700){
+            $('.header').css({'background':'#fff'})
+        }
+    })
 
 })(jQuery);

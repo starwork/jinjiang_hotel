@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="__PUBLIC__css/index/index.css">
 	<script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
 	<script src="__PUBLIC__public/iscroll/iscroll.min.js"></script>
+	<script src="__PUBLIC__js/common.js"></script>
+
 </head>
 <body>
 <!-- header -->
@@ -45,6 +47,16 @@
 				</a>
 			</li>
 		</ul>
+		<div class="ce-btn">
+			<div class="ce-btns">
+				<i class="tel"><img src="__PUBLIC__img/have_you/phone.png" width="100%" alt=""></i>
+				<div class="Alert" style="text-align: center;width:140px;line-height:40px; border:1px solid #a87200;height:40px;background:#fff;"><a href="tel:17717393689">17717393689</a></div>
+			</div>
+			<div class="ce-btns">
+				<i class="weixin"><img src="__PUBLIC__img/have_you/weixin.png" width="100%" alt=""></i>
+				<div class="Alert" style="text-align: center;width:140px;line-height:40px;height:40px;"><span><img src="__PUBLIC__img/index/qrcode2.png" alt="" width="70%"></span></div>
+			</div>
+		</div>
 	</div>
 	<img src="__PUBLIC__img/index/logo.png" alt="">
 </header>
@@ -78,7 +90,7 @@
 			<div class="detailcon-card">
 				<div class="detailcon-card-right">
 					<h4>{$r.title}</h4>
-					<img src="__PUBLIC__{$data.cover_img}" alt="">
+					<img src="__PUBLIC__{$r.cover_img}" alt="">
 					<span>{$r.time.month}月{$r.time.day}日 {$r.time.year}</span>
 				</div>
 			</div>
@@ -118,5 +130,7 @@
 	</div>
 </div>
 <script src="__PUBLIC__js/detail/detail.js"></script>
+<script src="__PUBLIC__js/index/index.js"></script>
+
 </body>
 </html>
