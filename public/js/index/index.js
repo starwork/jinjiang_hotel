@@ -122,6 +122,24 @@ $(function() {
     //stop submit
     $(".submit").on("click", function(e) {
         e.preventDefault();
+        require();
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: '/index/message/message' ,
+            data: $('.get_form').serialize(),
+            success: function (res) {
+                console.log(res);
+                if(res.state=='success'){
+                    alert(res.msg);
+                    $(".get_form")[0].reset();
+                }else{
+                    alert(res.msg);
+                }
+
+            },
+
+        });
     });
 
     //error 
@@ -188,7 +206,6 @@ $(function() {
     var check_phone = function() {
         var reg = /^((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)$/
         var num = $("#phone").val();
-
         if (!reg.test(num)) {
             show_info("#phone")
             return false
@@ -218,4 +235,14 @@ $(function() {
         return check_name() && check_phone() && check_email() && check_text()
     }
 
+});
+
+//    侧边栏
+$(".ce-btns").mouseover(function(){
+    $(this).css({color:"#a55c3f"}).siblings().css({background:"",color:""});
+    $(".ce-btns .Alert").eq($(this).index()).show();
+});
+$(".ce-btns").mouseleave(function(){
+    $(this).css({background:"",color:""});
+    $(".ce-btns .Alert").eq($(this).index()).hide();
 });
