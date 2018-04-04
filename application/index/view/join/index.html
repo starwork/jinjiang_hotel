@@ -106,7 +106,7 @@
             <div class="join_right">
                 <div>
                     <h1>加盟费用</h1>
-                    <!--<p>总收入的5%（不以GOP水平额外收费）</p>-->
+                    <span>重新开启的温暖记忆，一份可以传承的家业</span>
                 </div>
             </div>
         </div>
@@ -168,52 +168,42 @@
         <p>酒店选址</p>
         <div class=" clearfloat">
             <div class="f_l">
-                <div class="strategy_box">
-                    <div class="strategy_box_left bd_l">
-                        <div class="strategy_box_font">
-                            <p>首选一线城市</p>
-                            <p>布局北上广深</p>
-                        </div>
+                <div class="mid_box">
+                    <div class="mr_box">
+                        <img src="__PUBLIC__img/join/ideaitem4.png" alt="">
                     </div>
-                    <div class="strategy_box_right bd_r">
-                        <span><img src="__PUBLIC__img/join/ideaitem4.png" alt=""></span>
+                    <div class="ml_box ttt">
+                        <p>首选一线城市</p>
+                        <p>布局北上广深</p>
                     </div>
                 </div>
-                <div class="strategy_box">
-                    <div class="strategy_box_left bd_l">
-                        <div class="strategy_box_font">
-                            <p>二线城市以核心地段为主</p>
-                            <p>交通枢纽中心地段</p>
-                        </div>
+                <div class="mid_box">
+                    <div class="mr_box">
+                        <img src="__PUBLIC__img/join/ideaitem1.png" alt="">
                     </div>
-                    <div class="strategy_box_right bd_r">
-                        <span><img src="__PUBLIC__img/join/ideaitem1.png" alt=""></span>
+                    <div class="ml_box ttt">
+                        <p>二线城市以核心地段为主</p>
+                        <p>交通枢纽中心地段</p>
                     </div>
                 </div>
             </div>
-
             <div class="f_r">
-                <div class="strategy_box">
-                    <div class="strategy_box_left bd_r">
-                        <span><img src="__PUBLIC__img/join/ideaitem3.png" alt=""></span>
+                <div class="mid_box">
+                    <div class="mr_box">
+                        <img src="__PUBLIC__img/join/ideaitem3.png" alt="">
                     </div>
-                    <div class="strategy_box_right bd_l">
-                        <div class="strategy_box_font">
-                            <p>三线城市</p>
-                            <p>核心地段酒店物业改造为主</p>
-                        </div>
+                    <div class="ml_box ttt">
+                        <p>三线城市</p>
+                        <p>核心地段酒店物业改造为主</p>
                     </div>
                 </div>
-
-                <div class="strategy_box">
-                    <div class="strategy_box_right bd_r">
-                        <span><img src="__PUBLIC__img/join/ideaitem2.png" alt=""></span>
+                <div class="mid_box">
+                    <div class="mr_box">
+                        <img src="__PUBLIC__img/join/ideaitem2.png" alt="">
                     </div>
-                    <div class="strategy_box_right bd_l">
-                        <div class="strategy_box_font">
-                            <p>拓展新兴市场</p>
-                            <p>其他旅游型城市和地区</p>
-                        </div>
+                    <div class="ml_box ttt">
+                        <p>拓展新兴市场</p>
+                        <p>其他旅游型城市和地区</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +238,7 @@
                 <div>
                     <h3>客房大小</h3>
                     <p>新建项目:客房面积大于25平米</p>
-                    <p>改造项目:视物业现状根据品牌规范合理布局</p>
+                    <p>改造项目:视物业现状合理布局</p>
                 </div>
             </div>
             <div>
@@ -321,7 +311,7 @@
                     <div class="swiper_left">
                         <h1>运营案例</h1>
                         <h2>青岛新都心酒店</h2>
-                        <p> 锦江都城(青岛新都心店)地处青岛市市北区黑龙江南路，紧邻：凯德MALL、麦凯乐、居然之家等大型一站式购物商场，地理位置无与伦比；</p>
+                        <p>锦江都城(青岛新都心店)地处青岛市市北区黑龙江南路，致力于向中产阶级商务旅游客人提供精准专业且始终如一的商旅服务。</p>
                         <div>
                             <span><img src="__PUBLIC__img/join/example1.png" alt=""></span>
                             <p>利润案例</p>
@@ -341,7 +331,7 @@
                 </div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-pagination" style="text-align: left;"></div>
+            <div class="swiper-pagination gua" style="text-align: left;"></div>
         </div>
     </div>
 </div>
@@ -378,10 +368,18 @@
 <!---------------------------------------------------->
 <script src="__PUBLIC__js/index/index.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-    });
+
+        var swiper = new Swiper('.swiper-container', {
+            autoplay:true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+//        setInterval("swiper.slidePrev()",1000);
 </script>
 </body>

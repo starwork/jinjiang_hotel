@@ -224,13 +224,13 @@ input{outline:none;}
 	background-color: transparent;
 }
 .index1-p {
-	width: 50%;
+	width:60%;
 	margin: 5% auto;
 	text-indent: 2em;
-	font-size: 16px;
+	font-size: 18px;
 	/*letter-spacing: 0.2em;*/
 	font-weight: 100;
-	line-height: 20px;
+	line-height: 28px;
 }
 /*index page2*/
 .index-page2 {
@@ -278,10 +278,11 @@ input{outline:none;}
 	font-family: "arial";
 }
 .index-page2-article>.p2 {
+	font-size:20px;
+	line-height:2rem;
 	margin-bottom: 10px;
 	font-family: "宋体";
 	font-weight: 100;
-	line-height: 20px;
 }
 /*indexpage3*/
 .index-page3 {
@@ -330,12 +331,12 @@ input{outline:none;}
 	font-family: "arial";
 	text-indent: 0;
 }
-.company-bg>.p2 {
+.company-bg>.p2,.company-bg>.p3  {
 	font-family: "宋体";
+	line-height:1.7rem;
+	font-size:18px;
 }
-.company-bg>.p3 {
-	font-family: "宋体";
-}
+
 .index-page3-right>.market-bg {
 	padding: 16% 6% 0 21%;
 }
@@ -437,9 +438,10 @@ input{outline:none;}
 .war-t>.p2 {
 	width: 50%;
 	margin-left: 25%;
-	line-height: 20px;
 	font-weight: 100;
 	font-family: "宋体";
+	font-size: 18px;
+	line-height: 1.7rem;
 }
 .war-num{
 	position: absolute;

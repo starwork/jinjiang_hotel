@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://www.swiper.com.cn/dist/css/swiper.min.css">
+    <script src="http://www.swiper.com.cn/dist/js/swiper.min.js"></script>
+    <style type="text/css">
+
+        .swiper-container {
+            width: 900px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide box1"><img  src="img/a.jpg"></div>
+        <div class="swiper-slide box2" ><img  src="img/b.jpg"></div>
+        <div class="swiper-slide box3"><img   src="img/c.jpg"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 如果需要滚动条 -->
+    <!--<div class="swiper-scrollbar"></div>-->
+</div>
+
+</div>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplay : 1000,
+        speed:100,
+        // 如果需要滚动条
+//         scrollbar: '.swiper-scrollbar',
+        effect : 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflow: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows : true
+        }
+    })
+</script>
+
+</body>
+</html>
