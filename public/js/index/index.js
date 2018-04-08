@@ -55,7 +55,7 @@ $(function() {
         centeredSlides: true,
         loop: true,
         loopedSlides:5,
-        autoplay: 3000,
+        autoplay:true,
         preloadImages: true,
         noSwiping: false,
         pagination: {
@@ -101,6 +101,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper2', {
         loop: true,
         nested: true,
+        autoplay:true,
         // 如果需要分页器
         pagination: {
             el: '#swiper2-pagination',
@@ -112,6 +113,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper3', {
         loop: true,
         nested: true,
+        autoplay:true,
         // 如果需要分页器
         pagination: {
             el: '#swiper3-pagination',
