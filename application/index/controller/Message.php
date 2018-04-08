@@ -17,15 +17,15 @@ use think\Request;
 class Message extends Base
 {
     public function message(){
+        if(cookie('send_mail')){
+            return Handler::fail('已收到您的请求，请勿频繁操作');
+        }
         $post = Request::instance()->post();
         $data['name'] = $post['name'];
         $data['email'] = $post['email'];
         $data['tel'] = $post['tel'];
         $data['content'] = $post['content'];
         $res = Db::table('message')->insert($data);
-        if(cookie('send_mail')){
-            return Handler::fail('已收到您的请求，请勿频繁操作');
-        }
         if($res){
             $mailbody['name']="<a style='font-size:16px;color:#000;font-family:微软雅黑;text-decoration:none;'>姓名:".$data['name']."</a><br/>";
             $mailbody['phone']="<a style='font-size:16px;color:#000;font-family:微软雅黑;text-decoration:none;'>电话:".$data['tel']."</a><br/>";
