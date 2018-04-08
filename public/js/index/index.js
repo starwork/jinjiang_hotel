@@ -122,9 +122,10 @@ $(function() {
     })
 
     //stop submit
-    $(".submit").on("click", function(e) {
+    $(".get_form").submit(function(e) {
         e.preventDefault();
         require();
+        console.log(111);
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -225,14 +226,14 @@ $(function() {
         return true
     }
     var check_text = function() {
-            if ($("#request").val().length <= 0) {
-                show_info("#request")
-                return false;
-            }
-            show_info("#request", true)
-            return true;
+        if ($("#request").val().length <= 0) {
+            show_info("#request")
+            return false;
         }
-        // 表单验证
+        show_info("#request", true)
+        return true;
+    }
+    // 表单验证
     function require() {
         return check_name() && check_phone() && check_email() && check_text()
     }
@@ -250,7 +251,7 @@ $(".ce-btns").mouseleave(function(){
 });
 
 $(document).ready(function(){
-   var h =$(document.body).outerHeight(true);
+    var h =$(document.body).outerHeight(true);
     if(h>700){
         $('.header').css({'background':'#fff','border-bottom':'1px solid rgba(0,0,0,0.1'})
     }
