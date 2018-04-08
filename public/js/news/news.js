@@ -25,13 +25,13 @@ $(function() {
                 swiperAnimateCache(this); //隐藏动画元素 
                 swiperAnimate(this); //初始化完成开始动画
             },
-            slideChangeTransitionStart: function() {
-            	if(this.activeIndex == 2){
-            		$(".header").css("background-color","#ffffff");
-            	}else{
-            		$(".header").css("background-color","transparent");
-            	}
-            },
+            // slideChangeTransitionStart: function() {
+            // 	if(this.activeIndex == 2){
+            // 		$(".header").css("background-color","#ffffff");
+            // 	}else{
+            // 		$(".header").css("background-color","transparent");
+            // 	}
+            // },
             slideChangeTransitionEnd: function() {
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
 

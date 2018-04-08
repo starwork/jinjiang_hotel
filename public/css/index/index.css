@@ -198,11 +198,16 @@ input{outline:none;}
 
 #certify .swiper-slide {
 	width:49%;
-	height:480px;
-	background: #fff;
-	box-shadow: 0 8px 30px #ddd;
+	height:0;
+	padding-bottom: 31%;
+	overflow:hidden;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	/*background: #fff;*/
+	box-shadow: 0 8px 30px #ddd;
 }
 
 #certify .swiper-pagination {
@@ -989,8 +994,14 @@ input{outline:none;}
 	margin-bottom: 4%;
 }
 .newspre-title {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
 	font-size: 24px;
 	margin-bottom: 10%;
+	height: 2em;
 }
 .newspre-addr {
 	font-size: 16px;
@@ -1020,7 +1031,7 @@ input{outline:none;}
 	border-radius: 13px;
 	background-color: #e4e4e4;
 	position: absolute;
-	bottom: 27%;
+	bottom: 25%;
 	cursor: pointer;
 }
 .add-png {

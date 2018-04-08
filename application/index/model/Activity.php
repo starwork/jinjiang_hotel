@@ -29,8 +29,8 @@ class Activity extends Model
     {
         $value =preg_replace("/<.*?>/",'',$value);
         $len = mb_strlen($value);
-        if($len>80){
-            $value = mb_substr($value,0,80).'...';
+        if($len>60){
+            $value = mb_substr($value,0,60).'...';
         }
         return $value;
     }
