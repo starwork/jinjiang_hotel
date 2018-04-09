@@ -6,6 +6,12 @@ $(function() {
         $(this).toggleClass('nav_btn_open');
         $(".nav_ul").toggleClass('nav_ul_open');
     });
+    $(".nav_btn_m").on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $(this).toggleClass('nav_btn_open');
+        $(".menu-m").toggleClass('menu-m-close');
+    });
 
     //parent swiper
     var all_swiper = new Swiper('.all_swiper', {
@@ -55,7 +61,7 @@ $(function() {
         centeredSlides: true,
         loop: true,
         loopedSlides:5,
-        autoplay:true,
+        // autoplay:true,
         preloadImages: true,
         noSwiping: false,
         pagination: {
@@ -183,6 +189,18 @@ $(function() {
             "display": "flex"
         });
         $("footer").hide();
+    })
+
+    $(".submit-need").on("click", function() {
+        console.log(11);
+        $(".indexpage7-up-right").css("opacity",1);
+        $(".indexpage7-up-right").css("z-index",100);
+    })
+
+    $(".submit_close").on("click", function() {
+        console.log(11);
+        $(".indexpage7-up-right").css("opacity",0);
+        $(".indexpage7-up-right").css("z-index",-10);
     })
 
     //错误提示
