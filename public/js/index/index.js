@@ -101,7 +101,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper2', {
         loop: true,
         nested: true,
-        autoplay:true,
+        // autoplay:true,
         // 如果需要分页器
         pagination: {
             el: '#swiper2-pagination',
@@ -113,7 +113,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper3', {
         loop: true,
         nested: true,
-        autoplay:true,
+        // autoplay:true,
         // 如果需要分页器
         pagination: {
             el: '#swiper3-pagination',
@@ -250,9 +250,9 @@ $(".ce-btns").mouseleave(function(){
     $(".ce-btns .Alert").eq($(this).index()).hide();
 });
 
-$(document).ready(function(){
-    var h =$(document.body).outerHeight(true);
-    if(h>700){
-        $('.header').css({'background':'#fff','border-bottom':'1px solid rgba(0,0,0,0.1'})
-    }
-});
+// $(document).ready(function(){
+//     var h =$(document.body).outerHeight(true);
+//     if(h>700){
+//         $('.header').css({'background':'#fff','border-bottom':'1px solid rgba(0,0,0,0.1'})
+//     }
+// });

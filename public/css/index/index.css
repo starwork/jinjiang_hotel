@@ -60,7 +60,7 @@ input{outline:none;}
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	/*background: white;*/
+	background: white;
 }
 .header>img {
 	height: 89px;
@@ -158,14 +158,14 @@ input{outline:none;}
 	background-color: #f7f7f7;
 }
 .index1-h{
-	margin-top:100px;
-	height:100px;
-	line-height:100px;
-	font-size:36px;
+	margin-top:80px;
+	font-size: 26px;
 	text-align: center;
 	letter-spacing: 8px;
 	text-indent: 0.3em;
-	color:#d0982a;
+	color: #d0982a;
+	height: 70px;
+	line-height: 70px;
 }
 /*swiper1*/
 /*#certify {*/
@@ -199,7 +199,7 @@ input{outline:none;}
 #certify .swiper-slide {
 	width:49%;
 	height:0;
-	padding-bottom: 31%;
+	padding-bottom:26%;
 	overflow:hidden;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -212,6 +212,7 @@ input{outline:none;}
 
 #certify .swiper-pagination {
 	width: 100%;
+	margin:1%;
 }
 
 #certify .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -228,11 +229,10 @@ input{outline:none;}
 	background-color: transparent;
 }
 .index1-p {
-	width:60%;
-	margin:5% auto 0 auto;
+	width: 60%;
+	margin: 3% auto 0 auto;
 	text-indent: 2em;
-	font-size: 18px;
-	/*letter-spacing: 0.2em;*/
+	font-size: 16px;
 	font-weight: 100;
 	line-height: 28px;
 }
@@ -272,7 +272,7 @@ input{outline:none;}
 	font-size: 16px;
 }
 .index-page2-article>h3 {
-	font-size: 28px;
+	font-size: 26px;
 	margin-bottom: 4px;
 	margin-bottom: 18px;
 }
@@ -282,7 +282,7 @@ input{outline:none;}
 	font-family: "arial";
 }
 .index-page2-article>.p2 {
-	font-size:20px;
+	font-size:18px;
 	line-height:2rem;
 	margin-bottom: 10px;
 	font-family: "宋体";
@@ -314,11 +314,11 @@ input{outline:none;}
 .index-page3-left>.company-bg {
 	width: 88%;
 	position: absolute;
-	top:38%;
+	top:28%;
 	z-index: 10;
 	background-color: #d0982a;
 	color: #ffffff;
-	padding: 8% 10%;
+	padding:4% 10%;
 	font-size: 16px;
 }
 .company-bg>p {
@@ -342,16 +342,15 @@ input{outline:none;}
 }
 
 .index-page3-right>.market-bg {
-	padding: 18% 6% 30% 18%;
+	padding: 14% 6% 30% 18%;
 }
 .market-t {
 	padding-left: 5%;
 	color: #d0982a;
-	margin-bottom: 12%;
+	margin-bottom:6%;
 }
 .market-t>h3 {
-	font-size:36px;
-    margin-bottom: 30px;
+	font-size:26px;
 }
 .market-t>p {
 	font-family: "arial";
@@ -363,8 +362,8 @@ input{outline:none;}
 .market-card {
 	float: left;
 	position: relative;
-	width: 44%;
-	margin-bottom: 2%;
+	width:44%;
+	margin-bottom:2%;
 }
 .market-card>img {
 	position: absolute;
@@ -379,7 +378,7 @@ input{outline:none;}
 .card-t {
 	position: relative;
 	z-index: 5;
-	margin: 20% 27% 20% 0;
+	margin: 14% 27% 15% 0;
 	padding: 0 10%;
 }
 .card-t>p {
@@ -387,8 +386,8 @@ input{outline:none;}
 	line-height: 22px;
 }
 .card-t>.p1 {
-	font-size: 28px;
-	margin-bottom: 30px;
+	font-size: 24px;
+	margin-bottom: 10px;
 }
 .card-t>.p2 {
 	overflow: hidden;
@@ -521,7 +520,7 @@ input{outline:none;}
 	text-align: center;
 }
 .ward-t>h3 {
-	font-size:36px;
+	font-size:26px;
 	margin-bottom: 8px;
 }
 .ward-t>.p1 {
@@ -529,19 +528,19 @@ input{outline:none;}
 	margin-bottom: 20px;
 }
 .swiper2 {
-	margin-top: 8%;
+	margin-top:6%;
 	text-align: center;
 	height: 68%;
 	overflow: visible;
 }
 .ward-item {
 	display: inline-block;
-	width: 215px;
+	width:13%;
 	background-color: #ffffff;
 	border: 1px solid #d0982a;
 	padding: 10px 0;
 	text-align: center;
-	margin-right: 6%;
+	margin-right:4%;
 }
 .ward-item:last-child {
 	margin-right: 0;
@@ -559,10 +558,10 @@ input{outline:none;}
 }
 .ward-item>img {
 	width: 80px;
-	margin: 60px 0 24px 0;
+	margin:34px 0 24px 0;
 }
 .ward-item>.p2 {
-	font-size: 18px;
+	font-size:16px;
 	margin-bottom: 2px;
 }
 .ward-item>.p3 {
@@ -651,7 +650,7 @@ input{outline:none;}
 	letter-spacing: 0.2em;
 }
 .case-mask>h3 {
-	font-size: 20px;
+	font-size:18px;
 	padding: 10px;
 	letter-spacing: 0.25em;
 }
@@ -682,7 +681,7 @@ input{outline:none;}
 /*index page7*/
 .indexpage7-up {
 	position: absolute;
-	top:77px;
+	top:0;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -690,7 +689,7 @@ input{outline:none;}
 }
 .indexpage7-up-left {
 	position: absolute;
-	top: 0;
+	top:8%;
 	left: 0;
 	width: 50%;
 	height:70%;
@@ -698,7 +697,7 @@ input{outline:none;}
 }
 .indexpage7-up-right {
 	position: absolute;
-	top: 0;
+	top:8%;
 	right: 0;
 	width: 50%;
 	height:71%;
@@ -710,8 +709,8 @@ input{outline:none;}
 }
 .contact-us {
 	width: 80%;
-	height: 80%;
-	margin:10% 0 0 26%;
+	height:80%;
+	margin:14% 0 0 26%;
 }
 .contact-us>.ward-t {
 	text-align: left;
@@ -730,7 +729,7 @@ input{outline:none;}
 }
 .t-and-e {
 	color: #dbb977;
-	font-size:20px;
+	font-size:16px;
 	line-height:34px;
 	margin-bottom: 5%;
 }
@@ -823,7 +822,6 @@ input{outline:none;}
 /*footer*/
 .footer {
 	position: absolute;
-	top:70%;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -1031,7 +1029,7 @@ input{outline:none;}
 	border-radius: 13px;
 	background-color: #e4e4e4;
 	position: absolute;
-	bottom: 25%;
+	bottom:14%;
 	cursor: pointer;
 }
 .add-png {
@@ -1241,3 +1239,31 @@ input{outline:none;}
 }
 
 #certify .swiper-slide-active{transform: translateX(0px) scale(1.3)!important;transition:all 0s!important;}
+
+@media only screen and (max-width: 768px) {
+	.index1-h{font-size:26px;margin-top: 80px;}
+	#certify .swiper-slide{width:54%;}
+	.index1-p{width:90%;}
+}
+/********************************************************************************************/
+@media screen and (min-width:1750px){
+	.index1-h {margin-top: 100px;height: 80px;line-height: 80px;font-size: 36px;}
+	.market-t>h3,.market-t>h3,.ward-t>h3{font-size:36px;}
+	#certify .swiper-container {padding-bottom:0;margin-top:2%;}
+	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 18px;}
+	/*#certify .swiper-slide,.index-page2-article>h3{padding-bottom:31%;}*/
+	.index-page3-left>.company-bg{top:34%;padding:8% 10%;}
+	.index-page3-right>.market-bg {padding: 18% 6% 30% 18%;}
+	.index-page2-article>.p2{font-size:20px;}
+	.card-t>.p1 {font-size: 28px;margin-bottom: 30px;}
+	.card-t {margin:20% 27% 20% 0; padding:0 10%}
+	.market-t{margin-bottom:12%;}
+	.swiper2{margin-top:8%;}
+	.ward-item {width:12%;}
+	.case-mask>h3,.company-bg>.p2, .company-bg>.p3{font-size:20px;}
+	.ward-item>.p2{font-size:18px;}
+	.ward-item>img {margin:60px 0 24px 0;}
+	.indexpage7-up-left,.indexpage7-up-right{top:7%;}
+	.t-and-e{font-size:20px;}
+	.contact-us{margin:12% 0 0 26%;}
+}
