@@ -7,10 +7,15 @@ $(function() {
         $(".nav_ul").toggleClass('nav_ul_open');
     });
 
+
     var myScroll = new IScroll('#wrapper', {
         mouseWheel: true,
         scrollbars: true
     });
+    myScroll.on('scrollEnd', function(){
+        this.refresh();
+    });
+
     //    侧边栏
     $(".ce-btns").mouseover(function(){
         $(this).css({color:"#a55c3f"}).siblings().css({});
@@ -27,5 +32,4 @@ $(function() {
             $('.header').css({'background':'#fff','border-bottom':'1px solid rgba(0,0,0,0.1'})
         }
     });
-})
-})
+});
