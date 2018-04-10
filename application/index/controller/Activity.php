@@ -22,15 +22,15 @@ class Activity extends Base
         return Handler::fail();
     }
 
-////分页获取数据
-//    public function index($page)
-//    {
-//        $data = (new ActivityModel())->getIndexList($page);
-//        if($data){
-//            return Handler::success('获取成功',$data);
-//        }
-//        return Handler::fail();
-//    }
+//分页获取数据
+    public function page($page)
+    {
+        $data = (new ActivityModel())->getPage($page);
+        if($data){
+            return Handler::success('获取成功',$data);
+        }
+        return Handler::fail();
+    }
 
 //    详情页
     public function detail($id)

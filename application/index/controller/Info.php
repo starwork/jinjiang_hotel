@@ -25,9 +25,9 @@ class Info extends Base
     }
 
 //分页获取数据
-    public function index($page)
+    public function page($page)
     {
-        $data = (new InfoModel())->getIndexList($page);
+        $data = (new InfoModel())->getPage($page);
         if($data){
             return Handler::success('获取成功',$data);
         }

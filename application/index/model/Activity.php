@@ -44,12 +44,18 @@ class Activity extends Model
         return $data;
     }
 
-//  获取$page页的活动列表
+//  获取活动列表
     public function getIndexList()
     {
         $data = $this->field(['id','title','time','status','location','cover_img','content'])->order('time desc')->select();
         return $data;
     }
 
+//获取第n页的活动列表
+    public function getPage($page)
+    {
+        $data = $this->field(['id','title','time','status','location','cover_img','content'])->order('time desc')->page($page,6)->select();
+        return $data;
+    }
 
 }

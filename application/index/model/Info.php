@@ -47,10 +47,17 @@ class Info extends Model
         return $data;
     }
 
-//  获取$page页的资讯列表
+//  获取资讯列表
     public function getIndexList()
     {
         $data = $this->field(['id','title','time','cover_img','content'])->order('time desc')->select();
+        return $data;
+    }
+
+//  获取$page页的资讯列表
+    public function getPage($page)
+    {
+        $data = $this->field(['id','title','time','cover_img','content'])->order('time desc')->page($page,3)->select();
         return $data;
     }
 
