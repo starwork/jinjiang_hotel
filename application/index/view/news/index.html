@@ -1,327 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>锦江都城酒店</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<link rel="icon" href="__PUBLIC__img/index/icon.png">
-		<link rel="stylesheet" href="__PUBLIC__css/reset.css">
-		<link rel="stylesheet" href="__PUBLIC__public/swiper/swiper-4.2.0.min.css">
-		<link rel="stylesheet" href="__PUBLIC__public/layui/layui.css">
-		<link rel="stylesheet" href="__PUBLIC__css/index/index.css">
-		<link rel="stylesheet" href="__PUBLIC__public/swiper/animate.min.css">
-		<script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
-		<script src="__PUBLIC__public/swiper/swiper-4.2.0.min.js"></script>
-		<script src="__PUBLIC__public/swiper/swiper.animate1.0.3.min.js"></script>
-		<script src="__PUBLIC__public/layui/layui.js"></script>
-		<script src="__PUBLIC__js/common.js"></script>
-		<style>
-			.swiper-slide{width:100%;height:100%!important;}
-			.news-slide4{height:auto!important;}
-		</style>
-	</head>
-	<body>
-		<!--mobile menu-->
-		<div class="nav-m">
-		<div class="nav_btn_m">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<div class="menu-m menu-m-close">
-			<div class="menu-line1">
-				<img src="__PUBLIC__img/index/logo.png" alt="">
-			</div>
-			<div class="menu-line2">
-				<div class="menu-nav">
-					<a class="menu-nav-item" href="/index/index/index">
-						<img src="__PUBLIC__img/index/menu1.png" alt="">
-						<p>品牌介绍</p>
-					</a>
-					<a class="menu-nav-item" href="/index/join/index">
-						<img src="__PUBLIC__img/index/menu3.png" alt="">
-						<p>加盟合作</p>
-					</a>
-					<a class="menu-nav-item" href="/index/news/index">
-						<img src="__PUBLIC__img/index/menu2.png" alt="">
-						<p>品牌活动</p>
-					</a>
-					<a class="menu-nav-item" href="/index/reserve/index">
-						<img src="__PUBLIC__img/index/menu4.png" alt="">
-						<p>酒店预定</p>
-					</a>
-				</div>
-				<div class="menu-join">
-					<img src="__PUBLIC__img/index/menu5.png" alt="">
-					<span>加盟咨询</span>
-				</div>
-			</div>
-		</div>
-	</div>
-		<!-- header -->
-		<header class="header">
-			<div class="nav">
-				<div class="nav_btn nav_btn_open">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<ul class="nav_ul nav_ul_open">
-					<li>
-						<a href="/index/index/index">
-							<img src="__PUBLIC__img/index/nav1.png" alt="">
-							<span>品牌介绍</span>
-						</a>
-					</li>
-					<li>
-						<a href="/index/join/index">
-							<img src="__PUBLIC__img/index/nav2.png" alt="">
-							<span>加盟合作</span>
-						</a>
-					</li>
-					<li>
-						<a href="/index/news/index">
-							<img src="__PUBLIC__img/index/nav3.png" alt="">
-							<span>品牌活动</span>
-						</a>
-					</li>
-					<li>
-						<a href="/index/reserve/index">
-							<img src="__PUBLIC__img/index/nav4.png" alt="">
-							<span>酒店预订</span>
-						</a>
-					</li>
-				</ul>
-				<div class="ce-btn">
-					<div class="ce-btns">
-						<i class="tel"><img src="__PUBLIC__img/have_you/phone.png" width="100%" alt=""></i>
-						<div class="Alert" style="text-align: center;width:140px;line-height:40px; border:1px solid #a87200;height:40px;background:#fff;"><a href="tel:17717393689">17717393689</a></div>
-					</div>
-					<div class="ce-btns">
-						<i class="weixin"><img src="__PUBLIC__img/have_you/weixin.png" width="100%" alt=""></i>
-						<div class="Alert" style="text-align: center;width:140px;line-height:40px;height:40px;"><span><img src="__PUBLIC__img/index/qrcode2.png" alt="" width="70%"></span></div>
-					</div>
-				</div>
-			</div>
-			<img id="logo-p" src="__PUBLIC__img/index/logo.png" alt="">
-			<img id="logo-m" src="__PUBLIC__img/index/icon.png" alt="">
-		</header>
-		<!--mobile btn-->
-		<div class="ce-btn-m">
-			<div class="ce-btns-m1">
-				<a href="tel:17717393689">
-					<img src="__PUBLIC__img/index/phone-m.png" width="100%" alt="">
-				</a>
-			</div>
-			<div class="ce-btns-m2">
-				<img src="__PUBLIC__img/index/wx-m.png" width="100%" alt="">
-				<div class="ce-btn-m2-code">
-					<img src="__PUBLIC__img/index/qrcode.png" alt="">
-				</div>
-			</div>
-			<div class="ce-btn-m3">
-				<img src="__PUBLIC__img/index/go-up.png" alt="">
-			</div>
-		</div>
-		<!-- swiper -->
-		<div class="swiper-container all_swiper news_p">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide news-slide1">
-					<div class="news-slide-btn">
-						<div class="news-slide-btn1">
-							<img src="__PUBLIC__img/news/news-btn1.png" alt="">
-							<div class="news-btn-con">
+<head>
+    <meta charset="UTF-8">
+    <title>锦江都城酒店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="__PUBLIC__img/index/icon.png">
+    <link rel="stylesheet" href="__PUBLIC__css/reset.css">
+    <link rel="stylesheet" href="__PUBLIC__public/swiper/swiper-4.2.0.min.css">
+    <link rel="stylesheet" href="__PUBLIC__public/layui/layui.css">
+    <link rel="stylesheet" href="__PUBLIC__css/index/index.css">
+    <link rel="stylesheet" href="__PUBLIC__public/swiper/animate.min.css">
+    <script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
+    <script src="__PUBLIC__public/swiper/swiper-4.2.0.min.js"></script>
+    <script src="__PUBLIC__public/swiper/swiper.animate1.0.3.min.js"></script>
+    <script src="__PUBLIC__public/layui/layui.js"></script>
+    <script src="__PUBLIC__js/common.js"></script>
+    <style>
+        .swiper-slide {
+            width: 100%;
+            height: 100% !important;
+        }
+
+        .news-slide4 {
+            height: auto !important;
+        }
+    </style>
+</head>
+<body>
+<!--mobile menu-->
+<div class="nav-m">
+    <div class="nav_btn_m">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-m menu-m-close">
+        <div class="menu-line1">
+            <img src="__PUBLIC__img/index/logo.png" alt="">
+        </div>
+        <div class="menu-line2">
+            <div class="menu-nav">
+                <a class="menu-nav-item" href="/index/index/index">
+                    <img src="__PUBLIC__img/index/menu1.png" alt="">
+                    <p>品牌介绍</p>
+                </a>
+                <a class="menu-nav-item" href="/index/join/index">
+                    <img src="__PUBLIC__img/index/menu3.png" alt="">
+                    <p>加盟合作</p>
+                </a>
+                <a class="menu-nav-item" href="/index/news/index">
+                    <img src="__PUBLIC__img/index/menu2.png" alt="">
+                    <p>品牌活动</p>
+                </a>
+                <a class="menu-nav-item" href="/index/reserve/index">
+                    <img src="__PUBLIC__img/index/menu4.png" alt="">
+                    <p>酒店预定</p>
+                </a>
+            </div>
+            <div class="menu-join">
+                <img src="__PUBLIC__img/index/menu5.png" alt="">
+                <span>加盟咨询</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header -->
+<header class="header">
+    <div class="nav">
+        <div class="nav_btn nav_btn_open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav_ul nav_ul_open">
+            <li>
+                <a href="/index/index/index">
+                    <img src="__PUBLIC__img/index/nav1.png" alt="">
+                    <span>品牌介绍</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index/join/index">
+                    <img src="__PUBLIC__img/index/nav2.png" alt="">
+                    <span>加盟合作</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index/news/index">
+                    <img src="__PUBLIC__img/index/nav3.png" alt="">
+                    <span>品牌活动</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index/reserve/index">
+                    <img src="__PUBLIC__img/index/nav4.png" alt="">
+                    <span>酒店预订</span>
+                </a>
+            </li>
+        </ul>
+        <div class="ce-btn">
+            <div class="ce-btns">
+                <i class="tel"><img src="__PUBLIC__img/have_you/phone.png" width="100%" alt=""></i>
+                <div class="Alert"
+                     style="text-align: center;width:140px;line-height:40px; border:1px solid #a87200;height:40px;background:#fff;">
+                    <a href="tel:17717393689">17717393689</a></div>
+            </div>
+            <div class="ce-btns">
+                <i class="weixin"><img src="__PUBLIC__img/have_you/weixin.png" width="100%" alt=""></i>
+                <div class="Alert" style="text-align: center;width:140px;line-height:40px;height:40px;"><span><img
+                        src="__PUBLIC__img/index/qrcode2.png" alt="" width="70%"></span></div>
+            </div>
+        </div>
+    </div>
+    <img id="logo-p" src="__PUBLIC__img/index/logo.png" alt="">
+    <img id="logo-m" src="__PUBLIC__img/index/icon.png" alt="">
+</header>
+<!--mobile btn-->
+<div class="ce-btn-m">
+    <div class="ce-btns-m1">
+        <a href="tel:17717393689">
+            <img src="__PUBLIC__img/index/phone-m.png" width="100%" alt="">
+        </a>
+    </div>
+    <div class="ce-btns-m2">
+        <img src="__PUBLIC__img/index/wx-m.png" width="100%" alt="">
+        <div class="ce-btn-m2-code">
+            <img src="__PUBLIC__img/index/qrcode.png" alt="">
+        </div>
+    </div>
+    <div class="ce-btn-m3">
+        <img src="__PUBLIC__img/index/go-up.png" alt="">
+    </div>
+</div>
+<!-- swiper -->
+<div class="swiper-container all_swiper news_p">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide news-slide1">
+            <div class="news-slide-btn">
+                <div class="news-slide-btn1">
+                    <img src="__PUBLIC__img/news/news-btn1.png" alt="">
+                    <div class="news-btn-con">
 								<span class="ten news-ten">
 									<span class="ten1"></span>
 									<span class="ten2"></span>
 								</span>
-								<p>
-									加盟活动
-								</p>
-							</div>
-						</div>
-						<div class="news-slide-btn2">
-							<img src="__PUBLIC__img/news/news-btn2.png" alt="">
-							<div class="news-btn-con">
+                        <p>
+                            加盟活动
+                        </p>
+                    </div>
+                </div>
+                <div class="news-slide-btn2">
+                    <img src="__PUBLIC__img/news/news-btn2.png" alt="">
+                    <div class="news-btn-con">
 								<span class="ten news-ten">
 									<span class="ten1"></span>
 									<span class="ten2"></span>
 								</span>
-								<p>
-									品牌资讯
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide news-slide2">
-					<div class="news-slide2-left">
-						<div class="news-slide2-left-con">
-							<h3>加盟活动</h3>
-							<span>最近活动简介</span>
-						</div>
-					</div>
-					<div class="news-slide2-right">
-						<div class="swiper-container newspage-siwper2">
-							<div class="swiper-wrapper">
-								{volist name="activity" id="ac"}
-								<div class="swiper-slide">
-									<div class="news-preview">
-										<p class="newspre-day">
-											{$ac.time.day}
-										</p>
-										<!-- <p class="newspre-status">
-												活动正在报名中......
-										</p> -->
-										<p class="newspre-date">
-											{$ac.time.month}/{$ac.time.year}
-										</p>
-										<h3 class="newspre-title">{$ac.title}</h3>
-										<p class="newspre-addr">地址:{$ac.location}</p>
-										<img class="newspre-img" src="__PUBLIC__{$ac.cover_img}" alt="">
-										<div class="newspre-intro">{$ac.content}</div>
-										<a href="{:url('index/activity/detail',['id'=>$ac.id])}">
-										<div class="newspre-detail">
-											<p>查看详情</p>
-											<div class="add-png">
-												<img src="__PUBLIC__img/news/add.png" alt="">
-											</div>
-										</div>
-										</a>
-									</div>
-								</div>
-								{/volist}
-							</div>
-							<!-- 如果需要分页器 -->
-							<!-- <div class="swiper-pagination"></div> -->
-							<!-- 如果需要导航按钮 -->
-							<div class="newspage-siwper2-button-con">
-								<div class="newspage-siwper2-button-top"></div>
-								<div class="swiper-button-prev newspage-siwper2-button-prev"></div>
-								<div class="swiper-button-next newspage-siwper2-button-next"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide news-slide2">
-					<div class="news-slide2-left">
-						<div class="news-slide2-left-con">
-							<h3>品牌资讯</h3>
-							<span>最近活动简介</span>
-						</div>
-					</div>
-					<div class="news-slide2-right">
-						<div class="swiper-container newspage-siwper3">
-							<div class="swiper-wrapper">
-								{volist name="info" id="in"}
-								<div class="swiper-slide">
-									<div class="news-preview">
-										<p class="newspre-day">
-											{$in.time.day}
-										</p>
-										<!-- <p class="newspre-status">
-												活动正在报名中......
-										</p> -->
-										<p class="newspre-date">
-											{$in.time.month}/{$in.time.year}
-										</p>
-										<h3 class="newspre-title">{$in.title}</h3>
-										<img class="newspre-img" src="__PUBLIC__{$in.cover_img}" alt="">
-										<div class="newspre-intro">{$in.content}</div>
-										<a href="{:url('index/info/detail',['id'=>$in.id])}">
-										<div class="newspre-detail">
-											<p>查看详情</p>
-											<div class="add-png">
-												<img src="__PUBLIC__img/news/add.png" alt="">
-											</div>
-										</div>
-										</a>
-									</div>
-								</div>
-								{/volist}
-							</div>
-							<!-- 如果需要分页器 -->
-							<!-- <div class="swiper-pagination"></div> -->
-							<!-- 如果需要导航按钮 -->
-							<div class="newspage-siwper2-button-con">
-								<div class="newspage-siwper3-button-top"></div>
-								<div class="swiper-button-prev newspage-siwper3-button-prev"></div>
-								<div class="swiper-button-next newspage-siwper3-button-next"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide news-slide4">
-					<div class="footer news-footer">
-						<div class="footer-up">
-							<img src="__PUBLIC__img/index/footlogo.png" alt="">
-							<div class="footer-line">
-								<a href="/index/index/index">
-									品牌介绍
-								</a>
-								<a href="/index/join/index">
-									加盟合作
-								</a>
-								<a href="/index/news/index">
-									品牌活动
-								</a>
-								<a href="/index/reserve/index">
-									酒店预定
-								</a>
-							</div>
-						</div>
-						<div class="footer-down">
-							<p>Copyright © 2018 锦江都城. All Right Reserved.</p>
-							<p>
-								<a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a>
-							</p>
-							<p class="qiniuniu">技术支持
-								<a href="http://www.qiniuniu.com" target="_blank">
-									<img src="__PUBLIC__img/index/qiniuniu.png" width="2%">
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- 如果需要分页器 -->
-			<!-- <div class="swiper-pagination all_swiper-pagination"></div> -->
-		</div>
-		<!-- mobiel page -->
-		<div class="news_m">
-			<div class="news_m_bg"></div>
-			<div class="news_m_tab">
-				<div class="news_m_tab_item news_m_tab1 active">
-					<span>加盟活动</span>
-				</div>
-				<div class="news_m_tab_item news_m_tab2">
-					<span>品牌资讯</span>
-				</div>
-			</div>
-			<!-- join content-->
-			<div class="news_m_con1">
-			</div>
-			<!-- activity content-->
-			<div class="news_m_con2" style="display:none;">
-				<!--{volist name="info" offset="0" length="6" id="acm2"}-->
-				<!--<div class="news_m_card">-->
-					<!--<h3>{$acm2.title}</h3>-->
-					<!--<img src="__PUBLIC__{$acm2.cover_img}" alt="">-->
-					<!--<div class="m_card_addr">-->
-						<!--<div class="m_card_addr2">-->
-							<!--{$acm2.time.year}-{$acm2.time.month}-{$acm2.time.day}-->
-						<!--</div>-->
-					<!--</div>-->
-					<!--<div class="m_card_intro">-->
-						<!--{$acm2.content}-->
-					<!--</div>-->
-				<!--</div>-->
-				<!--{/volist}-->
-			</div>
-			<!-- activity content-->
-			<!--<div class="news_m_con2"></div>-->
-		</div>
-		<!--<script src="__PUBLIC__js/index/index.js"></script>-->
-		<script src="__PUBLIC__js/news/news.js"></script>
-	</body>
+                        <p>
+                            品牌资讯
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide news-slide2">
+            <div class="news-slide2-left">
+                <div class="news-slide2-left-con">
+                    <h3>加盟活动</h3>
+                    <span>最近活动简介</span>
+                </div>
+            </div>
+            <div class="news-slide2-right">
+                <div class="swiper-container newspage-siwper2">
+                    <div class="swiper-wrapper">
+                        {volist name="activity" id="ac"}
+                        <div class="swiper-slide">
+                            <div class="news-preview">
+                                <p class="newspre-day">
+                                    {$ac.time.day}
+                                </p>
+                                <!-- <p class="newspre-status">
+                                        活动正在报名中......
+                                </p> -->
+                                <p class="newspre-date">
+                                    {$ac.time.month}/{$ac.time.year}
+                                </p>
+                                <h3 class="newspre-title">{$ac.title}</h3>
+                                <p class="newspre-addr">地址:{$ac.location}</p>
+                                <img class="newspre-img" src="__PUBLIC__{$ac.cover_img}" alt="">
+                                <div class="newspre-intro">{$ac.content}</div>
+                                <a href="{:url('index/activity/detail',['id'=>$ac.id])}">
+                                    <div class="newspre-detail">
+                                        <p>查看详情</p>
+                                        <div class="add-png">
+                                            <img src="__PUBLIC__img/news/add.png" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {/volist}
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- 如果需要导航按钮 -->
+                    <div class="newspage-siwper2-button-con">
+                        <div class="newspage-siwper2-button-top"></div>
+                        <div class="swiper-button-prev newspage-siwper2-button-prev"></div>
+                        <div class="swiper-button-next newspage-siwper2-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide news-slide2">
+            <div class="news-slide2-left">
+                <div class="news-slide2-left-con">
+                    <h3>品牌资讯</h3>
+                    <span>最近活动简介</span>
+                </div>
+            </div>
+            <div class="news-slide2-right">
+                <div class="swiper-container newspage-siwper3">
+                    <div class="swiper-wrapper">
+                        {volist name="info" id="in"}
+                        <div class="swiper-slide">
+                            <div class="news-preview">
+                                <p class="newspre-day">
+                                    {$in.time.day}
+                                </p>
+                                <!-- <p class="newspre-status">
+                                        活动正在报名中......
+                                </p> -->
+                                <p class="newspre-date">
+                                    {$in.time.month}/{$in.time.year}
+                                </p>
+                                <h3 class="newspre-title">{$in.title}</h3>
+                                <img class="newspre-img" src="__PUBLIC__{$in.cover_img}" alt="">
+                                <div class="newspre-intro">{$in.content}</div>
+                                <a href="{:url('index/info/detail',['id'=>$in.id])}">
+                                    <div class="newspre-detail">
+                                        <p>查看详情</p>
+                                        <div class="add-png">
+                                            <img src="__PUBLIC__img/news/add.png" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {/volist}
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <!-- 如果需要导航按钮 -->
+                    <div class="newspage-siwper2-button-con">
+                        <div class="newspage-siwper3-button-top"></div>
+                        <div class="swiper-button-prev newspage-siwper3-button-prev"></div>
+                        <div class="swiper-button-next newspage-siwper3-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide news-slide4">
+            <div class="footer news-footer">
+                <div class="footer-up">
+                    <img src="__PUBLIC__img/index/footlogo.png" alt="">
+                    <div class="footer-line">
+                        <a href="/index/index/index">
+                            品牌介绍
+                        </a>
+                        <a href="/index/join/index">
+                            加盟合作
+                        </a>
+                        <a href="/index/news/index">
+                            品牌活动
+                        </a>
+                        <a href="/index/reserve/index">
+                            酒店预定
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-down">
+                    <p>Copyright © 2018 锦江都城. All Right Reserved.</p>
+                    <p>
+                        <a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a>
+                    </p>
+                    <p class="qiniuniu">技术支持
+                        <a href="http://www.qiniuniu.com" target="_blank">
+                            <img src="__PUBLIC__img/index/qiniuniu.png" width="2%">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <!-- <div class="swiper-pagination all_swiper-pagination"></div> -->
+</div>
+<!-- mobiel page -->
+<div class="news_m">
+    <div class="news_m_bg"></div>
+    <div class="news_m_tab">
+        <div class="news_m_tab_item news_m_tab1 active">
+            <span>加盟活动</span>
+        </div>
+        <div class="news_m_tab_item news_m_tab2">
+            <span>品牌资讯</span>
+        </div>
+    </div>
+    <!-- join content-->
+    <div class="news_m_con1">
+    </div>
+    <!-- activity content-->
+    <div class="news_m_con2" style="display:none;">
+        <!--{volist name="info" offset="0" length="6" id="acm2"}-->
+        <!--<div class="news_m_card">-->
+        <!--<h3>{$acm2.title}</h3>-->
+        <!--<img src="__PUBLIC__{$acm2.cover_img}" alt="">-->
+        <!--<div class="m_card_addr">-->
+        <!--<div class="m_card_addr2">-->
+        <!--{$acm2.time.year}-{$acm2.time.month}-{$acm2.time.day}-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="m_card_intro">-->
+        <!--{$acm2.content}-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--{/volist}-->
+    </div>
+    <!-- activity content-->
+    <!--<div class="news_m_con2"></div>-->
+</div>
+<!--<script src="__PUBLIC__js/index/index.js"></script>-->
+<script src="__PUBLIC__js/news/news.js"></script>
+</body>
 </html>

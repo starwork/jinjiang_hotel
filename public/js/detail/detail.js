@@ -6,6 +6,40 @@ $(function() {
         $(this).toggleClass('nav_btn_open');
         $(".nav_ul").toggleClass('nav_ul_open');
     });
+    $(".nav_btn_m").on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $(this).toggleClass('nav_btn_open');
+        $(".menu-m").toggleClass('menu-m-close');
+        $("#logo-m").toggleClass("d_n");
+    });
+
+    //wx
+    $(".ce-btns-m2").on('click',function(event){
+        event.preventDefault();
+        console.log(22);
+        $(".ce-btn-m2-code").css("display","block");
+    });
+    $(".ce-btn-m2-code").on('click',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+        $(this).css("display","none");
+    });
+
+    //加盟咨询
+    $(".menu-join").on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $(".nav_btn_m").toggleClass('nav_btn_open');
+        $(".menu-m").toggleClass('menu-m-close');
+        $("#logo-m").toggleClass("d_n");
+
+        all_swiper.slideTo(6, 500, true);
+
+        $(".indexpage7-up-right").css("opacity",1);
+        $(".indexpage7-up-right").css("z-index",100);
+
+    });
 
 
     var myScroll = new IScroll('#wrapper', {
