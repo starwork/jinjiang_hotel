@@ -48,6 +48,9 @@ input{outline:none;}
 .ce-btn-m2 {
 	position: relative;
 }
+.ce-btn-m3>img {
+	width: 100%;
+}
 .ce-btn-m2-code {
 	display: none;
 	position: fixed;
@@ -2013,12 +2016,103 @@ input{outline:none;}
 	}
 }
 /*news*/
+.news_m {
+	display: none;
+}
 @media screen and (max-width:768px) {
+	.layui-flow-more {
+		margin: 40px 0;
+	}
 	/*pc hide*/
 	.news_p {
+		position: absolute;
 		opacity: 0;
 		z-index: -100;
 	}
+	.news_m {
+		display: block;
+		margin-top: 50px;
+	}
+	body {
+		background-color: #eeeeee;
+	}
+	.nav_btn, .nav_btn1, .nav_btn_m {
+		position: fixed;
+	}
 	/*join page*/
-
+	.news_m_bg {
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		background-image: url("../../img/news/news-bg-m.png");
+		height: 100px;
+	}
+	.news_m_tab {
+		overflow: hidden;
+	}
+	.news_m_tab_item {
+		width: 26%;
+		margin: 0 12%;
+		height: 46px;
+		line-height: 50px;
+		float: left;
+		text-align: center;
+	}
+	.news_m_tab_item.active {
+		border-bottom: 4px solid #c88800;
+		color: #c88800;
+	}
+	.news_m_card {
+		width: 74%;
+		margin: 8%;
+		background-color: #ffffff;
+		border-radius: 10px;
+		padding: 5%;
+	}
+	.news_m_card>a>h3 {
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		font-size: 20px;
+		margin-bottom: 6px;
+		max-height: 40px;
+	}
+	.news_m_card>a>img {
+		width: 100%;
+	}
+	.m_card_addr {
+		overflow: hidden;
+		font-size: 14px;
+		color: #666666;
+		margin: 6px 0;
+	}
+	.m_card_addr1 {
+		width: 70%;
+		float: left;
+		overflow : hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.m_card_addr2 {
+		width: 30%;
+		float: right;
+		overflow : hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: right;
+	}
+	.m_card_intro {
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		font-size: 16px;
+		line-height: 16px;
+		max-height: 32px;
+	}
+	.news_m_con2>.news_m_card>.m_card_addr>.m_card_addr2 {
+		width: 100%;
+	}
 }

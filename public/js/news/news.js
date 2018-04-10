@@ -41,6 +41,96 @@ $(function() {
 
     });
 
+    //tab
+    $(".news_m_tab1").on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass("active");
+        $(".news_m_tab2").toggleClass("active");
+
+        $(".news_m_con2").css("display","none");
+        $(".news_m_con1").css("display","block");
+    });
+    $(".news_m_tab2").on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass("active");
+        $(".news_m_tab1").toggleClass("active");
+
+        $(".news_m_con1").css("display","none");
+        $(".news_m_con2").css("display","block");
+    });
+
+    //返回顶部
+    $(".ce-btn-m3").click(function() {
+        $("html,body").animate({scrollTop:0}, 500);
+    });
+
+    //流加载
+    $.get('/index/activity/count', function(res){
+        var allactpage = Math.ceil(res.data/3);
+        layui.use('flow', function(){
+            var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
+            var flow = layui.flow;
+            flow.load({
+                elem: '.news_m_con1' //指定列表容器
+                ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
+                    var lis = [];
+                    //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
+                    $.get('/index/activity/page/page/'+page, function(res){
+                        //假设你的列表返回在data集合中
+                        layui.each(res.data, function(index, item){
+                            lis.push('<div class="news_m_card">'+
+                                '<a href="/index/activity/detail/id/' + item.id + '.html">'+
+                                '<h3>' + item.title + '</h3>'+
+                            '<img src="/' + item.cover_img + '" alt="">'+
+                            '<div class="m_card_addr">'+
+                            '<div class="m_card_addr1">' + item.location + '</div>'+
+                            '<div class="m_card_addr2">' + item.time.year + '-' + item.time.month + '-' + item.time.day + '</div>'+
+                            '</div>'+
+                            '<div class="m_card_intro">' + item.content + '</div>'+
+                                '</a>'+
+                            '</div>');
+                        });
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                        next(lis.join(''), page < allactpage);
+                    });
+                }
+            });
+        });
+    });
+    $.get('/index/info/count', function(res){
+        var allinfopage = Math.ceil(res.data/3);
+        layui.use('flow', function(){
+            var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
+            var flow = layui.flow;
+            flow.load({
+                elem: '.news_m_con2' //指定列表容器
+                ,done: function(page, next){ //到达临界点（默认滚动触发），触发下一页
+                    var lis = [];
+                    //以jQuery的Ajax请求为例，请求下一页数据（注意：page是从2开始返回）
+                    $.get('/index/info/page/page/'+page, function(res){
+                        //假设你的列表返回在data集合中
+                        layui.each(res.data, function(index, item){
+                            lis.push('<div class="news_m_card">'+
+                                '<a href="/index/info/detail/id/' + item.id + '.html">'+
+                                '<h3>' + item.title + '</h3>'+
+                                '<img src="/' + item.cover_img + '" alt="">'+
+                                '<div class="m_card_addr">'+
+                                '<div class="m_card_addr2">' + item.time.year + '-' + item.time.month + '-' + item.time.day + '</div>'+
+                                '</div>'+
+                                '<div class="m_card_intro">' + item.content + '</div>'+
+                                '</a>'+
+                                '</div>');
+                        });
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                        next(lis.join(''), page < allinfopage);
+                    });
+                }
+            });
+        });
+    });
+
     //parent swiper
     var all_swiper = new Swiper('.all_swiper', {
         direction: 'vertical',

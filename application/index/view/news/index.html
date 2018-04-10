@@ -7,11 +7,13 @@
 		<link rel="icon" href="__PUBLIC__img/index/icon.png">
 		<link rel="stylesheet" href="__PUBLIC__css/reset.css">
 		<link rel="stylesheet" href="__PUBLIC__public/swiper/swiper-4.2.0.min.css">
+		<link rel="stylesheet" href="__PUBLIC__public/layui/layui.css">
 		<link rel="stylesheet" href="__PUBLIC__css/index/index.css">
 		<link rel="stylesheet" href="__PUBLIC__public/swiper/animate.min.css">
 		<script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
 		<script src="__PUBLIC__public/swiper/swiper-4.2.0.min.js"></script>
 		<script src="__PUBLIC__public/swiper/swiper.animate1.0.3.min.js"></script>
+		<script src="__PUBLIC__public/layui/layui.js"></script>
 		<script src="__PUBLIC__js/common.js"></script>
 		<style>
 			.swiper-slide{width:100%;height:100%!important;}
@@ -116,6 +118,9 @@
 				<div class="ce-btn-m2-code">
 					<img src="__PUBLIC__img/index/qrcode.png" alt="">
 				</div>
+			</div>
+			<div class="ce-btn-m3">
+				<img src="__PUBLIC__img/index/go-up.png" alt="">
 			</div>
 		</div>
 		<!-- swiper -->
@@ -284,7 +289,37 @@
 		</div>
 		<!-- mobiel page -->
 		<div class="news_m">
-
+			<div class="news_m_bg"></div>
+			<div class="news_m_tab">
+				<div class="news_m_tab_item news_m_tab1 active">
+					<span>加盟活动</span>
+				</div>
+				<div class="news_m_tab_item news_m_tab2">
+					<span>品牌资讯</span>
+				</div>
+			</div>
+			<!-- join content-->
+			<div class="news_m_con1">
+			</div>
+			<!-- activity content-->
+			<div class="news_m_con2" style="display:none;">
+				<!--{volist name="info" offset="0" length="6" id="acm2"}-->
+				<!--<div class="news_m_card">-->
+					<!--<h3>{$acm2.title}</h3>-->
+					<!--<img src="__PUBLIC__{$acm2.cover_img}" alt="">-->
+					<!--<div class="m_card_addr">-->
+						<!--<div class="m_card_addr2">-->
+							<!--{$acm2.time.year}-{$acm2.time.month}-{$acm2.time.day}-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<div class="m_card_intro">-->
+						<!--{$acm2.content}-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--{/volist}-->
+			</div>
+			<!-- activity content-->
+			<!--<div class="news_m_con2"></div>-->
 		</div>
 		<!--<script src="__PUBLIC__js/index/index.js"></script>-->
 		<script src="__PUBLIC__js/news/news.js"></script>
