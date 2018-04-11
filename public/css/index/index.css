@@ -446,7 +446,6 @@ input{outline:none;}
 	font-size:18px;
 	line-height:2rem;
 	margin-bottom: 10px;
-	font-family: "宋体";
 	font-weight: 100;
 }
 /*indexpage3*/
@@ -1180,8 +1179,14 @@ input{outline:none;}
 	margin-bottom: 10%;
 }
 .newspre-intro {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
 	font-size: 14px;
-	line-height: 17px;
+	line-height: 14px;
+	height: 28px;
 	color: #333333;
 	margin-bottom: 30%;
 	overflow : hidden;
@@ -1542,7 +1547,7 @@ input{outline:none;}
 		margin: 0;
 	}
 	.market-crad-con {
-		height: 89%;
+		/*height: 89%;*/
 	}
 	.market-card {
 		/*height: 48%;*/
@@ -1735,23 +1740,26 @@ input{outline:none;}
 		background-image: url("../../img/index/indexpage2-m.png");
 	}
 	.index-page2-img {
+		display: none;
 		top: 15%;
 		left: 21%;
 		height: 38%;
 		width: 57%;
 	}
 	.index-page2-article {
-		top: 62%;
-		width: 88%;
-		right: 6%;
+		padding: 10px;
+		background-color: rgba(0,0,0,0.3);
+		top: 43%;
+		width: 87%;
+		right: 5%;
 	}
 	.index-page2-article>h3 {
 		font-size: 20px;
 		margin-bottom: 16px;
 	}
 	.index-page2-article>.p2 {
-		font-size: 14px;
-		line-height: 16px;
+		font-size: 16px;
+		line-height: 22px;
 	}
 	.index-page3-left>.company-bg {
 		width: 180%;
@@ -1842,7 +1850,7 @@ input{outline:none;}
 		height: 0;
 	}
 	.market-card>img {
-		height: auto;
+		height: 100%;
 	}
 	/*slide4*/
 	#swiper2-pagination {

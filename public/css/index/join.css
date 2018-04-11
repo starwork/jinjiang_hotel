@@ -52,7 +52,8 @@
 .right_box>div>div>p{line-height:1.5rem;}
 .swiper_left{width:30%;margin-right:20%;float:left;}
 .swiper_right{width:50%;float:left;}
-.swiper_left>div{width:33.333%;float:left;text-align:center;margin-top: 10%;}
+.swiper_left>div{width:24%;float:left;text-align:center;margin-top: 10%;}
+.swiper_left>div>span>img{width:60%;}
 .swiper_left h1{font-size:56px;padding:29% 0 11% 0;color:#c88800;}
 .swiper_left h2{font-size:36px;padding:2% 0;}
 .swiper_left p{line-height:1.5rem;}
@@ -233,9 +234,9 @@ padding: 2rem 0;
         font-size: 12px;
     }
     .swiper_left {
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .swiper_left h1 {
         padding: 20px 0;
@@ -246,7 +247,7 @@ padding: 2rem 0;
         font-size: 20px;
     }
     .swiper_left p {
-        font-size: 16px;
+        font-size: 14px;
     }
     .swiper_right {
         width: 96%;
@@ -255,8 +256,8 @@ padding: 2rem 0;
     }
     .swiper_right img {
         padding: 20px 0;
-        width: 90%;
-        margin-left: 5%;
+        width: 70%;
+        margin-left: 15%;
     }
     .last-pagination {
         text-align: center!important;
