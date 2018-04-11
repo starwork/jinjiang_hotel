@@ -81,6 +81,7 @@ input{outline:none;}
 	display: none;
 }
 .menu-line1 {
+	display: none;
 	width: 82%;
 	margin-left: 9%;
 	height: 16%;
@@ -91,14 +92,14 @@ input{outline:none;}
 	height: 100%;
 }
 .menu-line2 {
-	height: 84%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-image: url("../../img/index/menu-bg.png");
 	overflow: hidden;
 }
 .menu-nav {
-	margin-top: 7%;
+	margin-top: 31%;
 }
 .menu-nav-item {
 	width: 40%;
@@ -787,7 +788,7 @@ input{outline:none;}
 .case-left-down {
 	position: relative;
 	width: 100%;
-	height: 50%;
+	height: 48%;
 	overflow:hidden;
 	/*background-color: blue;*/
 }

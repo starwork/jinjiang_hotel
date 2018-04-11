@@ -11,7 +11,7 @@ $(function() {
         /* Act on the event */
         $(this).toggleClass('nav_btn_open');
         $(".menu-m").toggleClass('menu-m-close');
-        $("#logo-m").toggleClass("d_n");
+        // $("#logo-m").toggleClass("d_n");
     });
 
     //wx
