@@ -858,7 +858,7 @@ input{outline:none;}
 }
 .indexpage7-up-right {
 	position: absolute;
-	top:8%;
+	top: 50px;
 	right: 0;
 	width: 50%;
 	height:71%;
@@ -1164,7 +1164,14 @@ input{outline:none;}
 	height: 2em;
 }
 .newspre-addr {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	height: 32px;
 	font-size: 16px;
+	line-height: 16px;
 	color: #666666;
 	margin-bottom: 4%;
 }
