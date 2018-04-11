@@ -397,12 +397,13 @@ input{outline:none;}
 	background-color: transparent;
 }
 .index1-p {
+	height: 20%;
 	width: 60%;
-	margin: 3% auto 0 auto;
+	margin: 0 auto 0 auto;
 	text-indent: 2em;
 	font-size: 16px;
 	font-weight: 100;
-	line-height: 28px;
+	line-height: 18px;
 }
 /*index page2*/
 .index-page2 {
@@ -411,10 +412,15 @@ input{outline:none;}
 	background-image: url("../../img/index/indexpage2.png");
 }
 .index-page2-con{
-	position: relative;
-	width: 84%;
-	height: 100%;
-	margin: 0 auto;
+	/*position: relative;*/
+	/*width: 84%;*/
+	/*height: 100%;*/
+	/*margin: 0 auto;*/
+	position: absolute;
+	top: 58px;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .index-page2-img {
 	position: absolute;
@@ -433,8 +439,8 @@ input{outline:none;}
 }
 .index-page2-article{
 	position: absolute;
-	top:45%;
-	right: 0;
+	top: 35%;
+	right: 6%;
 	width: 44%;
 	color: #ffffff;
 	font-size: 16px;
@@ -479,24 +485,24 @@ input{outline:none;}
 	background-image: url("../../img/index/indexpage3-right.png");
 }
 .index-page3-left>.company-bg {
-	width: 88%;
+	width: 100%;
 	position: absolute;
-	top:28%;
+	top: 20%;
 	z-index: 10;
 	background-color: #d0982a;
 	color: #ffffff;
-	padding:4% 10%;
+	padding: 10px;
 	font-size: 16px;
 }
 .company-bg>p {
-	margin-bottom: 18px;
+	margin-bottom: 10px;
 	font-weight: 100;
 	line-height: 20px;
 	text-indent: 2em;
 }
 .company-bg>h3 {
 	font-size: 28px;
-	margin-bottom:48px;
+	margin-bottom:10px;
 }
 .company-bg>.p1 {
 	font-family: "arial";
@@ -509,7 +515,8 @@ input{outline:none;}
 }
 
 .index-page3-right>.market-bg {
-	padding: 14% 6% 30% 18%;
+	height: 80%;
+	margin: 0 0 0 30px;
 }
 .market-t {
 	padding-left: 5%;
@@ -523,20 +530,28 @@ input{outline:none;}
 	font-family: "arial";
 }
 .market-crad-con {
-	width: 100%;
+	width: 338px;
+	height: 374px;
 	overflow: hidden;
+	position: absolute;
+	top: 13%;
+	left: 50%;
+	margin-left: -169px;
 }
 .market-card {
+	max-width: 169px;
+	max-height: 178px;
 	float: left;
 	position: relative;
-	width:44%;
+	width: 44%;
+	height: 48%;
 	margin-bottom:2%;
 }
 .market-card>img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width:78%;
+	width: 100%;
 	height: 100%;
 }
 .market-card>.card-t {
@@ -544,9 +559,9 @@ input{outline:none;}
 }
 .card-t {
 	position: relative;
+	height: 100%;
 	z-index: 5;
-	margin: 14% 27% 15% 6%;
-	padding: 0 6%;
+	padding: 0 25px;
 }
 .card-t>p {
 	font-size: 16px;
@@ -554,28 +569,42 @@ input{outline:none;}
 }
 .card-t>.p1 {
 	font-size: 24px;
-	margin-bottom: 10px;
+	height: 20%;
+	position: relative;
+}
+.card-t>.p1>span{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
 .card-t>.p2 {
-	overflow: hidden;
-	height: 1.4em;
+	/*overflow: hidden;*/
+	height: 30%;
+	position: relative;
 }
 .card-t>.p3 {
 	height: 1.4em;
 }
 .card-t>.p4 {
-	min-height: 4.2em;
-	margin-bottom: 10px;
+	height: 40%;
 }
-.card-t>.p2>span {
+.card-t>.p2>div {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 20%;
+}
+.card-t>.p2>div>span {
 	display: inline-block;
 	overflow: hidden;
 	width: 1em;
 }
-.card-t>.p2>span:first-child {
+.card-t>.p2>div>span:first-child {
 	float: left;
 }
-.card-t>.p2>span:last-child {
+.card-t>.p2>div>span:last-child {
 	float: right;
 }
 /*index page4*/
@@ -700,14 +729,17 @@ input{outline:none;}
 	height: 68%;
 	overflow: visible;
 }
+.swiper2>.swiper-wrapper>.swiper-slide {
+	height: 100%;
+}
 .ward-item {
 	display: inline-block;
-	width:13%;
+	width: 13%;
+	height: 100%;
 	background-color: #ffffff;
 	border: 1px solid #d0982a;
-	padding: 10px 0;
 	text-align: center;
-	margin-right:4%;
+	margin-right: 4%;
 }
 .ward-item:last-child {
 	margin-right: 0;
@@ -920,7 +952,7 @@ input{outline:none;}
     width: 60%;
 }
 .line{
-    height: 56px;
+    height: 29px;
     font-size: 16px;
     border-bottom: 1px solid #ecca82;
     padding-right: 15px;
@@ -928,7 +960,7 @@ input{outline:none;}
     position: relative;
 }
 .are-line{
-    height: 100px;
+    height: 65px;
     border-bottom: none;
 }
 .line label{
@@ -962,8 +994,8 @@ input{outline:none;}
 
 }
 .submit{
-    width: 140px;
-    height: 44px;
+    width: 102px;
+    height: 36px;
     background: transparent;
     border:2px solid #ecca82;
     color: #ecca82;
@@ -1470,13 +1502,13 @@ input{outline:none;}
 	.index1-h {margin-top: 100px;height: 80px;line-height: 80px;font-size: 36px;}
 	.market-t>h3,.market-t>h3,.ward-t>h3{font-size:36px;}
 	#certify .swiper-container {padding-bottom:0;margin-top:2%;}
-	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 18px;}
+	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 16px;}
 	/*#certify .swiper-slide,.index-page2-article>h3{padding-bottom:31%;}*/
-	.index-page3-left>.company-bg{top:34%;padding:8% 10%;}
-	.index-page3-right>.market-bg {padding: 18% 6% 30% 18%;}
+	.index-page3-left>.company-bg{top:34%;padding: 15px;}
+	.index-page3-right>.market-bg {height:80%;margin: 10% 0 0 30px;}
 	.index-page2-article>.p2{font-size:20px;}
-	.card-t>.p1 {font-size: 28px;margin-bottom: 30px;}
-	.card-t {margin:20% 27% 20% 0; padding:0 10%}
+	.card-t>.p1{height:20%;position:relative;}
+	.card-t {height: 100%;padding: 0 25px;}
 	.market-t{margin-bottom:12%;}
 	.swiper2{margin-top:8%;}
 	.ward-item {width:12%;}
@@ -1491,7 +1523,7 @@ input{outline:none;}
 	/*slide1*/
 	.index-slide1-con {
 		position: absolute;
-		top: 80px;
+		top: 58px;
 		left: 0;
 		right: 0;
 		bottom: 0;
@@ -1513,7 +1545,7 @@ input{outline:none;}
 		padding-bottom: 0;
 	}
 	#certify .swiper-container {
-		height: 73%;
+		height: 70%;
 		padding-bottom: 0;
 	}
 	#certify .swiper-slide {
@@ -1537,36 +1569,34 @@ input{outline:none;}
 	/*slide3*/
 	.index-page3>.index-page3-con {
 		position: absolute;
-		top: 78px;
+		top: 58px;
 		left: 0;
 		right: 0;
 		bottom: 0;
 	}
 	.index-page3-left>.company-bg {
-		padding: 8% 10%;
+		padding: 15px;
 	}
 	.index-page3-right>.market-bg {
-		height: 78%;
-		padding: 10% 6% 12% 18%;
+		height: 80%;
+		margin: 10% 0 0 30px;
 	}
 	.market-t {
 		height: 11%;
 		margin: 0;
 	}
 	.market-crad-con {
-		/*height: 89%;*/
+		height: 89%;
 	}
 	.market-card {
-		/*height: 48%;*/
+		height: 48%;
 	}
 	.card-t {
-		height: 79%;
-		/*margin: 20% 27% 15% 0;*/
+		height: 100%;
+		padding: 0 25px;
 	}
 	.card-t>.p2 {
-		padding-top: 10%;
-		padding-bottom: 12%;
-		height: 26%;
+		height: 30%;
 	}
 	.card-t>.p3 {
 		height: 0;
@@ -1574,7 +1604,6 @@ input{outline:none;}
 	/*slide5*/
 	.ward-item {
 		width: 14%;
-		padding: 22px 0;
 	}
 	.ward-item>.p1 {
 		margin-top: 17%;
@@ -1583,7 +1612,7 @@ input{outline:none;}
 		margin: 26% 0 19% 0;
 	}
 	.swiper2 {
-		margin-top: 9%;
+		margin-top: 3%;
 		height: 62%;
 	}
 	/*last slide*/
@@ -1625,15 +1654,15 @@ input{outline:none;}
 		font-size: 14px;
 	}
 	.market-card>img {
-		width: 93%;
+		width: 100%;
 	}
 	.card-t {
-		height: 79%;
-		margin: 20% 14% 15% 7%;
+		height: 100%;
+		padding: 0 25px;
 	}
 	.index-page3-right>.market-bg {
-		height: 84%;
-		padding: 18% 6% 9% 18%;
+		height: 80%;
+		margin: 10% 0 0 30px;
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1150px) {
@@ -1649,7 +1678,7 @@ input{outline:none;}
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 	.contact-us {
-		width: 90%;
+		width: 54%;
 	}
 	.ward-item {
 		width: 19%;
@@ -1824,23 +1853,21 @@ input{outline:none;}
 	}
 	.market-crad-con {
 		/*height: 90%;*/
-        padding: 0 9%;
         width: 82%;
-        display: flex;
-        flex-wrap: wrap;
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
         justify-content: center;
+		margin-left: -169px;
 	}
 	.market-card {
-		margin-left: 2.5%;
-        margin-bottom: 3%;
-		/*width: 42%;*/
+		height: 44%;
+		margin-left: 1%;
 	}
 	.market-card:nth-child(odd) {
-		margin-left: 5%;
+		margin-left: 1%;
 	}
 	.card-t {
-		/*height: 79%;*/
-		/*margin: 14% 9% 15% 0;*/
+		padding: 0 12px;
 	}
 	.card-t>p {
 		font-size: 12px;
