@@ -271,8 +271,9 @@ input{outline:none;}
 }
 .nav_ul>li>a>img {
 	float: left;
-	width: 33px;
+	width: 34px;
 	vertical-align: bottom;
+	margin-left: 3px;
 }
 .nav_ul>li>a>span {
 	font-family: "Microsoft YaHei";
