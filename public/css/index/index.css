@@ -269,6 +269,7 @@ input{outline:none;}
 	/*border:1px solid #e1e1e1;*/
 }
 .nav_ul>li>a>img {
+	width: 33px;
 	vertical-align: bottom;
 }
 .nav_ul>li>a>span {
