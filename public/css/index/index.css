@@ -263,20 +263,23 @@ input{outline:none;}
 .nav_ul>li {
 	height: 35px;
 	padding: 4px 0;
+	overflow: hidden;
 }
 .nav_ul>li:hover {
 	background-color: #ffffff;
 	/*border:1px solid #e1e1e1;*/
 }
 .nav_ul>li>a>img {
+	float: left;
 	width: 33px;
 	vertical-align: bottom;
 }
 .nav_ul>li>a>span {
+	float: left;
 	display: inline-block;
 	width: 150px;
 	text-align: left;
-	height: 35px;
+	height: 34px;
 	line-height: 35px;
 	font-size: 18px;
 }
