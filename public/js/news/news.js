@@ -26,21 +26,6 @@ $(function() {
         $(this).css("display","none");
     });
 
-    //加盟咨询
-    $(".menu-join").on('click', function(event) {
-        event.preventDefault();
-        /* Act on the event */
-        $(".nav_btn_m").toggleClass('nav_btn_open');
-        $(".menu-m").toggleClass('menu-m-close');
-        $("#logo-m").toggleClass("d_n");
-
-        all_swiper.slideTo(6, 500, true);
-
-        $(".indexpage7-up-right").css("opacity",1);
-        $(".indexpage7-up-right").css("z-index",100);
-
-    });
-
     //tab
     $(".news_m_tab1").on('click', function(event) {
         event.preventDefault();

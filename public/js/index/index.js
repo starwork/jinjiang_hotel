@@ -26,25 +26,11 @@ $(function() {
         $(this).css("display","none");
     });
 
-    //加盟咨询
-    $(".menu-join").on('click', function(event) {
-        event.preventDefault();
-        /* Act on the event */
-        $(".nav_btn_m").toggleClass('nav_btn_open');
-        $(".menu-m").toggleClass('menu-m-close');
-        $("#logo-m").toggleClass("d_n");
-
-        all_swiper.slideTo(6, 500, true);
-
-        $(".indexpage7-up-right").css("opacity",1);
-        $(".indexpage7-up-right").css("z-index",100);
-
-    });
-
     //parent swiper
     var all_swiper = new Swiper('.all_swiper', {
         direction: 'vertical',
         mousewheel: true,
+        hashNavigation: true, //锚导航
         // 如果需要分页器
         pagination: {
             el: '.all_swiper-pagination',
@@ -56,6 +42,13 @@ $(function() {
             init: function() {
                 swiperAnimateCache(this); //隐藏动画元素 
                 swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionStart: function(){
+                console.log(this.activeIndex);
+                if(this.width <= 768 && this.activeIndex == 6){
+                    $(".indexpage7-up-right").css("opacity",0);
+                    $(".indexpage7-up-right").css("z-index",-10);
+                }
             },
             slideChangeTransitionEnd: function() {
                 swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
@@ -78,6 +71,21 @@ $(function() {
                 }
             }
         }
+    });
+
+    //加盟咨询
+    $(".menu-join").on('click', function(event) {
+        event.preventDefault();
+        /* Act on the event */
+        $(".nav_btn_m").toggleClass('nav_btn_open');
+        $(".menu-m").toggleClass('menu-m-close');
+        $("#logo-m").toggleClass("d_n");
+
+        all_swiper.slideTo(6, 500, true);
+
+        $(".indexpage7-up-right").css("opacity",1);
+        $(".indexpage7-up-right").css("z-index",100);
+
     });
 
     //swiper1

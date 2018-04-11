@@ -26,21 +26,10 @@ $(function() {
         $(this).css("display","none");
     });
 
-    //加盟咨询
-    $(".menu-join").on('click', function(event) {
-        event.preventDefault();
-        /* Act on the event */
-        $(".nav_btn_m").toggleClass('nav_btn_open');
-        $(".menu-m").toggleClass('menu-m-close');
-        $("#logo-m").toggleClass("d_n");
-
-        all_swiper.slideTo(6, 500, true);
-
-        $(".indexpage7-up-right").css("opacity",1);
-        $(".indexpage7-up-right").css("z-index",100);
-
+    //返回顶部
+    $(".ce-btn-m3").click(function() {
+        $("html,body").animate({scrollTop:0}, 500);
     });
-
 
     var myScroll = new IScroll('#wrapper', {
         mouseWheel: true,
@@ -50,7 +39,7 @@ $(function() {
         this.refresh();
     });
 
-    //    侧边栏
+    //侧边栏
     $(".ce-btns").mouseover(function(){
         $(this).css({color:"#a55c3f"}).siblings().css({});
         $(".ce-btns .Alert").eq($(this).index()).show();

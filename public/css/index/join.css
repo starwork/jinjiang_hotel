@@ -37,7 +37,7 @@
 .f_l{text-align:right;padding-right:1%;}
 .f_r{padding-left:1%;}
 .strategy_box_font{margin-top:19%;}
-.bg_bg{background:url("")}
+/*.bg_bg{background:url("")}*/
 .fulls{width: 100%;}
 .bd_l{width:65%;}
 .bd_r{width:35%;}
@@ -87,4 +87,184 @@
 }
 .gua{
 padding: 2rem 0;
+}
+
+/*********************************************************/
+@media screen and (max-width: 768px) {
+    .contents {
+        width: 98%;
+        margin: 0 1%;
+    }
+    .join_box {
+        position: relative;
+        padding-top: 102px;
+    }
+    .join_right {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .join_right>div {
+        padding: 0 2%;
+        text-align: center;
+    }
+    .join_right>div>h1 {
+        font-size: 28px;
+        line-height: 30px;
+        padding: 0;
+        margin: 20px 0;
+        font-weight: normal;
+    }
+    .join_right>div>span {
+        padding: 6px;
+    }
+    .join_left {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .border {
+        width: 41%;
+        margin-bottom: 2%;
+    }
+    .border:nth-child(odd) {
+        margin-left: 8%;
+    }
+    .border:nth-child(even) {
+        margin-left: 2%;
+    }
+    .border>div {
+        padding: 0 4%;
+        height: 150px;
+        text-align: center;
+    }
+    .border>div>h2 {
+        padding: 30px 0 10px 0;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .border>div>p {
+        font-size: 14px;
+    }
+    .yunying>h1 {
+        font-size: 28px;
+        line-height: 30px;
+        padding: 20px 0 10px;
+    }
+    .yunying>p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10%;
+    }
+    .icon {
+        padding: 44px 0 4px 0;
+    }
+    .icon>span>img {
+        width: 98%;
+        margin-left: 1%;
+    }
+    .swiper-slide>.icon>p {
+        font-size: 14px;
+        padding: 20px 12px;
+    }
+    .yunying h1, .join_box h1, .strategy h1 {
+        font-size: 28px;
+        padding-top: 20px;
+    }
+    .strategy>div>p {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+    .f_l .mr_box {
+        width: 80%;
+        margin-right: 10%;
+    }
+    .f_r .mr_box {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .mr_box>img {
+        width: 100%;
+        height: auto;
+    }
+    .mid_box .ttt {
+        padding: 10px 0;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+    .ttt p {
+        line-height: 20px;
+    }
+    .left_box {
+        width: 96%;
+        margin: 2%;
+        padding-top: 20px;
+    }
+    .left_box h1, .right_box h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0!important;
+        line-height: 36px;
+    }
+    .left_box h1:nth-child(2) {
+        height: 40px;
+    }
+    .left_box p {
+        text-align: center;
+    }
+    .left_box p img {
+        vertical-align: sub;
+        width: 21px;
+        margin-right: 4px;
+    }
+    .right_box {
+        width: 96%;
+        margin: 2%;
+    }
+    .right_box>div>div>h3 {
+        font-size: 20px;
+    }
+    .swiper_left {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .swiper_left h1 {
+        padding: 20px 0;
+        font-size: 28px;
+        text-align: center;
+    }
+    .swiper_left h2 {
+        font-size: 22px;
+    }
+    .swiper_right {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .swiper_right img {
+        padding: 20px 0;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .last-pagination {
+        text-align: center!important;
+        padding: 0px 0 20px;
+    }
+    .right_box>div:nth-child(odd) {
+        width: 47%;
+        float: left;
+        padding: 0 1% 0 2%;
+    }
+    .right_box>div:nth-child(even) {
+        width: 47%;
+        float: left;
+        padding: 0 2% 0 1%;
+    }
+    .qiniuniu>a>img {
+        width: 32px;
+    }
 }
