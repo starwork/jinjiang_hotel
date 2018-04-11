@@ -158,8 +158,9 @@ $(function() {
     //stop submit
     $(".get_form").submit(function(e) {
         e.preventDefault();
-        require();
-        console.log(111);
+        if(!require()){
+            return false;
+        }
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -174,7 +175,7 @@ $(function() {
                     alert(res.msg);
                 }
 
-            },
+            }
 
         });
     });
