@@ -147,6 +147,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper2', {
         loop: true,
         nested: true,
+        autoplay:true,
         // autoplay:true,
         // 如果需要分页器
         pagination: {
@@ -159,6 +160,7 @@ $(function() {
     var mySwiper2 = new Swiper('.swiper3', {
         loop: true,
         nested: true,
+        autoplay:true,
         // autoplay:true,
         // 如果需要分页器
         pagination: {
