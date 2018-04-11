@@ -14,7 +14,7 @@
 .join_box>div>div>div:hover p{color:white;transition:1s all;}
 .join_right span{background: #a87200;color: #fff;padding: 3% 3%;}
 .join_right>div{padding-left:20%;}
-.icon{width:25%;float:left;padding:44px 0 90px 0;}
+.icon{width:23%;float:left;padding:44px 0 90px 0;}
 .yunying{text-align:center;padding:2% 0;}
 .yunying>p{line-height:2rem;}
 .yunying h1{text-align:center;padding:40px 0 20px 0;}
@@ -164,7 +164,7 @@ padding: 2rem 0;
         padding: 44px 0 4px 0;
     }
     .icon>span>img {
-        width: 98%;
+        width: 68%;
         margin-left: 1%;
     }
     .swiper-slide>.icon>p {
