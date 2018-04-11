@@ -530,7 +530,7 @@ input{outline:none;}
 	position: absolute;
 	top: 0;
 	left: 0;
-	width:72%;
+	width:78%;
 	height: 100%;
 }
 .market-card>.card-t {
@@ -539,8 +539,8 @@ input{outline:none;}
 .card-t {
 	position: relative;
 	z-index: 5;
-	margin: 14% 27% 15% 0;
-	padding: 0 10%;
+	margin: 14% 27% 15% 6%;
+	padding: 0 6%;
 }
 .card-t>p {
 	font-size: 16px;
@@ -1545,7 +1545,8 @@ input{outline:none;}
 		/*margin: 20% 27% 15% 0;*/
 	}
 	.card-t>.p2 {
-		padding-top: 22%;
+		padding-top: 10%;
+		padding-bottom: 12%;
 		height: 26%;
 	}
 	.card-t>.p3 {
@@ -1609,7 +1610,7 @@ input{outline:none;}
 	}
 	.card-t {
 		height: 79%;
-		margin: 20% 6% 15% 0;
+		margin: 20% 14% 15% 7%;
 	}
 	.index-page3-right>.market-bg {
 		height: 84%;
@@ -1718,8 +1719,9 @@ input{outline:none;}
 	}
 	.index1-p {
 		margin-top: 0;
-		font-size: 13px;
-		line-height: 17px;
+		font-size: 14px;
+		line-height: 18px;
+		text-indent: 0;
 	}
 	/*slide2*/
 	.index-page2 {
@@ -1741,8 +1743,8 @@ input{outline:none;}
 		margin-bottom: 16px;
 	}
 	.index-page2-article>.p2 {
-		font-size: 12px;
-		line-height: 1rem;
+		font-size: 14px;
+		line-height: 16px;
 	}
 	.index-page3-left>.company-bg {
 		width: 180%;

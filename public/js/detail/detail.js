@@ -35,13 +35,15 @@ $(function() {
         $("html,body").animate({scrollTop:0}, 500);
     });
 
-    var myScroll = new IScroll('#wrapper', {
-        mouseWheel: true,
-        scrollbars: true
-    });
-    myScroll.on('scrollEnd', function(){
-        this.refresh();
-    });
+    if($(document).width() > 768){
+        var myScroll = new IScroll('#wrapper', {
+            mouseWheel: true,
+            scrollbars: true
+        });
+        myScroll.on('scrollEnd', function(){
+            this.refresh();
+        });
+    }
 
     //侧边栏
     $(".ce-btns").mouseover(function(){
