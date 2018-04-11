@@ -275,6 +275,7 @@ input{outline:none;}
 	vertical-align: bottom;
 }
 .nav_ul>li>a>span {
+	font-family: "Microsoft YaHei";
 	float: left;
 	display: inline-block;
 	width: 150px;
