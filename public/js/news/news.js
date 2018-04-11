@@ -25,6 +25,10 @@ $(function() {
         event.stopPropagation();
         $(this).css("display","none");
     });
+    $(".ce-btn-m2-code img").on('click',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
 
     //tab
     $(".news_m_tab1").on('click', function(event) {

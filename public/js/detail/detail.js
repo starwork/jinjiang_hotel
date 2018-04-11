@@ -25,6 +25,10 @@ $(function() {
         event.stopPropagation();
         $(this).css("display","none");
     });
+    $(".ce-btn-m2-code img").on('click',function(event){
+        event.preventDefault();
+        event.stopPropagation();
+    });
 
     //返回顶部
     $(".ce-btn-m3").click(function() {
