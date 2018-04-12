@@ -542,7 +542,7 @@ input{outline:none;}
 	max-height: 220px;
 	float: left;
 	position: relative;
-	width: 44%;
+	width: 42%;
 	height: 48%;
 	margin-bottom:2%;
 }
@@ -1507,7 +1507,7 @@ input{outline:none;}
 	.index1-h {margin-top: 100px;height: 80px;line-height: 80px;font-size: 36px;}
 	.market-t>h3,.market-t>h3,.ward-t>h3{font-size:36px;}
 	#certify .swiper-container {padding-bottom:0;margin-top:2%;}
-	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 18px;line-height: 26px;}
+	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 20px;line-height: 31px;}
 	/*#certify .swiper-slide,.index-page2-article>h3{padding-bottom:31%;}*/
 	.index-page3-left>.company-bg{top:38%;padding: 15px;}
 	.index-page3-right>.market-bg {height:80%;margin: 10% 0 0 30px;}
