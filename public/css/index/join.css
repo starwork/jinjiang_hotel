@@ -89,7 +89,81 @@
 .gua{
 padding: 2rem 0;
 }
-
+/*********************************************************/
+@media screen and (min-width: 768px) and (max-width: 1750px) {
+    .banner {
+        margin-top: 40px;
+    }
+    .join_box h2 {
+        font-size: 22px;
+        padding-top: 50px;
+    }
+    .border>div {
+        padding-left: 13px;
+        height: 216px;
+    }
+    .border p {
+        font-size: 14px;
+    }
+    .join_right span {
+        font-size: 14px;
+    }
+    .icon>span>img {
+        width: 50%;
+    }
+    .yunying>div p {
+        font-size: 16px;
+    }
+    .yunying h1, .join_box h1, .strategy h1 {
+        font-size: 46px;
+    }
+    .mid_box {
+        height: 9em;
+    }
+    .mid_box img {
+        height: 8em;
+    }
+    .ttt p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .mid_box .ttt {
+        padding-top: 2em;
+    }
+    .strategy>div>p {
+        font-size: 46px;
+    }
+    .left_box h1, .right_box h1 {
+        font-size: 46px;
+    }
+    .left_box>div>div {
+        font-size: 14px;
+    }
+    .clearfloat>p>span>img {
+        width: 22px;
+        vertical-align: text-bottom;
+    }
+    .right_box>div>div>h3 {
+        font-size: 20px;
+    }
+    .right_box>div>div>p {
+        font-size: 14px;
+    }
+    .swiper_left h1 {
+        font-size: 46px;
+    }
+    .swiper_left h2 {
+        font-size: 20px;
+    }
+    .swiper_left p {
+        font-size: 14px;
+    }
+    .swiper_left>div {
+        width: 25%;
+        margin-left: 7%!important;
+        font-size: 12px;
+    }
+}
 /*********************************************************/
 @media screen and (max-width: 768px) {
     .contents {
