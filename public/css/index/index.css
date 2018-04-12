@@ -975,7 +975,7 @@ input{outline:none;}
     top: 10px;
 }
 .are-line label{
-    top: 0;
+    top: 15px;
 }
 .line input ,.line textarea{
     background: transparent;
@@ -1528,8 +1528,17 @@ input{outline:none;}
 	.line {
 		height: 29px;
 	}
+	.line label {
+		top: 2px;
+	}
 	.are-line {
 		height: 65px;
+	}
+	.line input {
+		height: 20px;
+	}
+	.line textarea {
+		padding-bottom: 0;
 	}
 	/*reverse*/
 	.bg_pc {
