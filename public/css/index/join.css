@@ -89,8 +89,11 @@
 .gua{
 padding: 2rem 0;
 }
-/*********************************************************/
-@media screen and (min-width: 768px) and (max-width: 1750px) {
+.mid_box:last-child {
+    margin-bottom: 42px;
+}
+/********************************************************1750*/
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .banner {
         margin-top: 40px;
     }
@@ -119,6 +122,9 @@ padding: 2rem 0;
     }
     .mid_box {
         height: 9em;
+    }
+    .mid_box:last-child {
+        margin-bottom: 42px;
     }
     .mid_box img {
         height: 8em;

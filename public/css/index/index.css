@@ -770,7 +770,7 @@ input{outline:none;}
 	text-align: center;
 	position: absolute;
 	left: 0;
-	bottom: -32%;
+	bottom: -46%;
 }
 #swiper2-pagination .swiper-pagination-bullet {
 	display: inline-block;
@@ -1503,11 +1503,11 @@ input{outline:none;}
 	.index1-p{width:75%;}
 }
 /******************************************************************************/
-@media screen and (min-width:1600px){
+@media screen and (min-width:1440px){
 	.index1-h {margin-top: 100px;height: 80px;line-height: 80px;font-size: 36px;}
 	.market-t>h3,.market-t>h3,.ward-t>h3{font-size:36px;}
 	#certify .swiper-container {padding-bottom:0;margin-top:2%;}
-	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 16px;}
+	.index1-p {margin:5% auto 0 auto;text-indent: 2em;font-size: 18px;line-height: 26px;}
 	/*#certify .swiper-slide,.index-page2-article>h3{padding-bottom:31%;}*/
 	.index-page3-left>.company-bg{top:38%;padding: 15px;}
 	.index-page3-right>.market-bg {height:80%;margin: 10% 0 0 30px;}
@@ -1516,7 +1516,7 @@ input{outline:none;}
 	.card-t {height: 100%;padding: 0 25px;}
 	.market-t{margin-bottom:12%;}
 	.swiper2{margin-top:8%;}
-	.ward-item {width:12%;}
+	.ward-item {width:12%;min-width: 200px;}
 	.case-mask>h3,.company-bg>.p2, .company-bg>.p3{font-size:20px;}
 	.ward-item>.p2{font-size:18px;}
 	.ward-item>img {margin:60px 0 24px 0;}
@@ -1524,7 +1524,7 @@ input{outline:none;}
 	.t-and-e{font-size:20px;}
 }
 /******************************************************************************/
-@media screen and (min-width:768px) and (max-width:1599px) {
+@media screen and (min-width:768px) and (max-width:1439px) {
 	.line {
 		height: 29px;
 	}
@@ -1613,6 +1613,9 @@ input{outline:none;}
 	}
 	#swiper2-pagination {
 		bottom: -36%;
+	}
+	.war-num {
+		bottom: 34%;
 	}
 	/*index page3*/
 	.company-bg>h3 {
@@ -1732,7 +1735,7 @@ input{outline:none;}
 	}
 	.index-page3-right>.market-bg {
 		height: 80%;
-		margin: 10% 0 0 30px;
+		margin: 6% 0 0 30px;
 	}
 	.market-t {
 		line-height: 50px;
@@ -1741,6 +1744,7 @@ input{outline:none;}
 	.market-crad-con {
 		width: 374px;
 		height: 402px;
+		top: 18%;
 	}
 	.market-card {
 		width: 48%;
@@ -1762,7 +1766,8 @@ input{outline:none;}
 	}
 	/*slide5*/
 	.ward-item {
-		width: 152px;
+		width: 12%;
+		min-width: 144px;
 	}
 	.ward-item>.p1 {
 		margin-top: 17%;
