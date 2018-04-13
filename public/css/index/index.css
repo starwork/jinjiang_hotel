@@ -1349,6 +1349,7 @@ input{outline:none;}
 	width: 318px;
 	height: 100%;
 	left: 69%;
+	overflow: hidden;
 }
 .detailcon-article {
 	/*position: absolute;
@@ -2372,6 +2373,7 @@ input{outline:none;}
 		top: 57.5px;
 		min-height: calc(100% - 57.5px - 74px);
 		padding-bottom: 74px;
+		height: 100%;
 	}
 	.detailcon-main {
 		width: 96%;

@@ -11,7 +11,7 @@
 		<script src="__PUBLIC__public/jquery/jquery-1.10.1.min.js"></script>
 		<script src="__PUBLIC__public/iscroll/iscroll.min.js"></script>
 	</head>
-	<body style="height: auto;">
+	<body style="height:auto;min-height:calc(100% - 57.5px);position: relative;padding-bottom: 57.5px;">
 	<!--mobile menu-->
 	<div class="nav-m">
 		<div class="nav_btn_m">
@@ -153,20 +153,20 @@
 				</a>
 				{/volist}
 			</div>
-			<div class="footer-down footer-down-news-m" style="">
-				<p>Copyright © 2018 锦江都城. All Right Reserved.</p>
-				<p>
-					<a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a>
-				</p>
-				<p class="qiniuniu qiniuniu-news" style="margin-top:0;">技术支持
-					<a href="http://www.qiniuniu.com" target="_blank">
-						<img src="__PUBLIC__img/index/qiniuniu.png">
-					</a>
-				</p>
-			</div>
 		</div>
+	<div class="footer-down footer-down-news-m" style="">
+		<p>Copyright © 2018 锦江都城. All Right Reserved.</p>
+		<p>
+			<a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a>
+		</p>
+		<p class="qiniuniu qiniuniu-news" style="margin-top:0;">技术支持
+			<a href="http://www.qiniuniu.com" target="_blank">
+				<img src="__PUBLIC__img/index/qiniuniu.png">
+			</a>
+		</p>
+	</div>
 		<!-- footer -->
-		<div class="footer news-footer detail-footer footer-down-news-p">
+		<div class="footer news-footer detail-footer" style="background-color:#ffffff;padding-bottom:0;">
 			<div class="footer-up">
 				<!-- <img src="__PUBLIC__img/index/footlogo.png" alt=""> -->
 				<!-- <div class="footer-line">
@@ -184,12 +184,12 @@
 					</a>
 				</div> -->
 			</div>
-			<div class="footer-down">
+			<div class="footer-down footer-down-news-p" style="margin-top:0;">
 				<p>Copyright © 2018 锦江都城. All Right Reserved. <a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a></p>
 				<!-- <p>
 					<a href="http://www.miitbeian.gov.cn">沪ICP备06010411号-8</a>
 				</p> -->
-				<p class="qiniuniu qiniuniu-news">技术支持
+				<p class="qiniuniu qiniuniu-news" style="margin-top:0;">技术支持
 					<a href="http://www.qiniuniu.com" target="_blank">
 						<img src="__PUBLIC__img/index/qiniuniu.png">
 					</a>
@@ -198,6 +198,5 @@
 		</div>
 		<script src="__PUBLIC__js/detail/detail.js"></script>
 		<!--<script src="__PUBLIC__js/index/index.js"></script>-->
-
 	</body>
 </html>
