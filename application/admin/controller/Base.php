@@ -14,13 +14,13 @@ use think\Request;
 
 class Base extends Controller
 {
-//    public function __construct(Request $request = null)
-//    {
-//        parent::__construct($request);
-//        if(!session('username')){
-//            $this->redirect('admin/login/login');
-//        }
-//    }
+    public function __construct(Request $request = null)
+    {
+        parent::__construct($request);
+        if(!session('username')){
+            $this->redirect('admin/login/login');
+        }
+    }
 
 
 }
