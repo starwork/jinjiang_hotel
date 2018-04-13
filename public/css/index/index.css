@@ -2270,11 +2270,14 @@ input{outline:none;}
 	}
 	/*join page*/
 	.news_m_bg {
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		background-image: url("../../img/news/news-bg-m.png");
-		height: 100px;
+		/*background-repeat: no-repeat;*/
+		/*background-size: 100% 100%;*/
+		/*background-image: url("../../img/news/news-bg-m.jpg");*/
+		/*height: 100px;*/
 	}
+    .news_m_bg>img{
+        width: 100%;
+    }
 	.news_m_tab {
 		overflow: hidden;
 	}
