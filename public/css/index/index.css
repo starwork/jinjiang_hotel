@@ -1700,8 +1700,7 @@ input{outline:none;}
 		padding-bottom: 0;
 	}
 	#certify .swiper-container {
-		height: 65%;
-		margin-top: 3%;
+		height: 72%;
 		padding-bottom: 0;
 	}
 	#certify .swiper-slide {
@@ -1894,7 +1893,7 @@ input{outline:none;}
 		padding-bottom: 0;
 	}
 	#certify .swiper-container {
-		height: 30%;
+		height: 31%;
 		padding-bottom: 0;
 	}
 	#certify .swiper-slide {
@@ -2308,8 +2307,8 @@ input{outline:none;}
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		font-size: 20px;
+		line-height: 22px;
 		margin-bottom: 6px;
-		max-height: 40px;
 	}
 	.news_m_card>a>img {
 		width: 100%;
@@ -2342,8 +2341,7 @@ input{outline:none;}
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		font-size: 16px;
-		line-height: 16px;
-		max-height: 32px;
+		line-height: 20px;
 	}
 	.news_m_con2>.news_m_card>.m_card_addr>.m_card_addr2 {
 		width: 100%;
