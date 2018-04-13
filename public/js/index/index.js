@@ -184,6 +184,7 @@ $(function() {
                 console.log(res);
                 if(res.state=='success'){
                     alert(res.msg);
+                    all_swiper.slideTo(0,500,true);
                     $(".get_form")[0].reset();
                 }else{
                     alert(res.msg);
