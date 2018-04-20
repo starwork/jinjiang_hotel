@@ -101,7 +101,7 @@ $(function() {
         centeredSlides: true,
         loop: true,
         loopedSlides:5,
-        autoplay:true,
+        // autoplay:true,
         preloadImages: true,
         noSwiping: false,
         pagination: {
