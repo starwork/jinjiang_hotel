@@ -1,8 +1,8 @@
 .yunying h1,.join_box h1,.strategy h1{font-size:56px;}
 .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
-.banner{margin-top:58px;}
-.contents{width:69%;margin:0 auto;}
-.join_box{padding:2% 0;}
+.banner{margin-top:86px;}
+.contents{width:69%;margin:0 auto;overflow: hidden;}
+.join_box{padding:2% 0;overflow: hidden;}
 .join_box h2{font-size:36px;font-weight:bold;color:#a87200;padding-top:66px;padding-bottom:14px;transition:1s all;}
 .join_box h1{font-weight:bold;padding:20% 0;}
 .join_right,.join_left{width:50%;float:left;}
@@ -15,7 +15,7 @@
 .join_right span{background: #a87200;color: #fff;padding: 3% 3%;}
 .join_right>div{padding-left:20%;}
 .icon{width:23%;float:left;padding:44px 0 90px 0;}
-.yunying{text-align:center;padding:2% 0;}
+.yunying{text-align:center;padding:2% 0;overflow: hidden;}
 .yunying>p{line-height:2rem;}
 .yunying h1{text-align:center;padding:40px 0 20px 0;}
 .yunying>div p{text-align:center;font-size:24px;padding:20px 0;}
@@ -38,7 +38,7 @@
 .f_r{padding-left:1%;}
 .strategy_box_font{margin-top:19%;}
 /*.bg_bg{background:url("")}*/
-.fulls{width: 100%;}
+.fulls{width: 100%;overflow: hidden;}
 .bd_l{width:65%;}
 .bd_r{width:35%;}
 .left_box{width:40%;float:left;margin-right:10%;margin-top:16%;margin-bottom: 14%;}
@@ -172,6 +172,9 @@ padding: 2rem 0;
 }
 /*********************************************************/
 @media screen and (max-width: 768px) {
+    .banner {
+        margin-top: 50px;
+    }
     .contents {
         width: 98%;
         margin: 0 1%;

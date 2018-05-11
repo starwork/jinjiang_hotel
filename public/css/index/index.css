@@ -1163,7 +1163,7 @@ input{outline:none;}
 	/*height: 80%;
 	margin-top: 105px;*/
 	position: absolute;
-	top: 58px;
+	top: 86px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -1328,7 +1328,7 @@ input{outline:none;}
 }
 .detailcon {
 	position: absolute;
-	top: 59px;
+	top: 86px;
 	left: 0;
 	right: 0;
 	bottom: 38px;
@@ -1370,13 +1370,13 @@ input{outline:none;}
 	border: 1px solid #c5c5c5;
 	border-radius: 5px;
 	padding: 0 10px 0 10px;
-	line-height: 20px;
+	line-height: 30px;
 	margin-right: 10px;
 	margin-bottom: 20px;
 }
 .detailcon-icon>div>img {
 	width:16px;
-	margin: 2px 6px;
+	margin: 7px 6px;
 	vertical-align: top;
 }
 .detailcon-icon>div>img>span{
@@ -1994,7 +1994,7 @@ input{outline:none;}
 		position: relative;
 	}
 	.market-t {
-		height: 9%;
+		height: 1em;
 		margin: 0;
 		padding-left: 0;
 	}
@@ -2295,11 +2295,10 @@ input{outline:none;}
 		color: #c88800;
 	}
 	.news_m_card {
-		width: 74%;
-		margin: 2% 8% 2% 8%;
+		width: 88%;
+		margin: 2% 4% 2% 4%;
 		background-color: #ffffff;
-		border-radius: 10px;
-		padding: 2% 5%;
+		padding: 2% 2%;
 	}
 	.news_m_card>a>h3 {
 		-webkit-box-orient: vertical;
@@ -2391,7 +2390,6 @@ input{outline:none;}
 	}
 	.detailcon-icon {
 		border: 1px solid #c5c5c5;
-		border-radius: 10px;
 		padding-top: 4px;
 		margin-bottom: 16px;
 	}
@@ -2470,4 +2468,38 @@ input{outline:none;}
 	.market-card:nth-child(even) {
 		margin-left: 10%;
 	}
+}
+@media screen and (max-width: 340px) {
+    .market-card:nth-child(even){
+        margin-left: 3%;
+    }
+    .card-t>.p4>span{
+        font-size: 12px;
+    }
+    .market-card{
+        min-height: 130px;
+    }
+    .ward-item{
+        width: 42%;
+        margin: 0 0 2% 2%;
+    }
+    .ward-item:nth-child(odd){
+        margin-left: 3%;
+    }
+    .contact-us {
+        left: 1%;
+        width: 98%;
+    }
+    .contact-us>.ward-t{
+        margin-bottom: 1%;
+    }
+    .t-and-e{
+        margin-bottom: 2%;
+    }
+    .qrcode-con-item{
+        margin-bottom: 4px;
+    }
+    .footer-line{
+        width: 92%;
+    }
 }
