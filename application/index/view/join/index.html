@@ -429,51 +429,63 @@
 </div>
 <!---------------------------------------------------->
 <script>
-    // nav
-    $(".nav_btn").on('click', function(event) {
-        event.preventDefault();
-        /* Act on the event */
-        $(this).toggleClass('nav_btn_open');
-        $(".nav_ul").toggleClass('nav_ul_open');
-    });
-    $(".nav_btn_m").on('click', function(event) {
-        event.preventDefault();
-        /* Act on the event */
-        $(this).toggleClass('nav_btn_open');
-        $(".menu-m").toggleClass('menu-m-close');
-        // $("#logo-m").toggleClass("d_n");
-    });
+    $(function(){
+        wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       0,          // default
+                mobile:       true,       // default
+                live:         true        // default
+            }
+        )
+        wow.init();
 
-    //wx
-    $(".ce-btns-m2").on('click',function(event){
-        event.preventDefault();
-        console.log(22);
-        $(".ce-btn-m2-code").css("display","block");
-    });
-    $(".ce-btn-m2-code").on('click',function(event){
-        event.preventDefault();
-        event.stopPropagation();
-        $(this).css("display","none");
-    });
-    $(".ce-btn-m2-code img").on('click',function(event){
-        event.preventDefault();
-        event.stopPropagation();
-    });
+        // nav
+        $(".nav_btn").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            $(this).toggleClass('nav_btn_open');
+            $(".nav_ul").toggleClass('nav_ul_open');
+        });
+        $(".nav_btn_m").on('click', function(event) {
+            event.preventDefault();
+            /* Act on the event */
+            $(this).toggleClass('nav_btn_open');
+            $(".menu-m").toggleClass('menu-m-close');
+            // $("#logo-m").toggleClass("d_n");
+        });
 
-    //返回顶部
-    $(".ce-btn-m3").click(function() {
-        $("html,body").animate({scrollTop:0}, 500);
-    });
+        //wx
+        $(".ce-btns-m2").on('click',function(event){
+            event.preventDefault();
+            console.log(22);
+            $(".ce-btn-m2-code").css("display","block");
+        });
+        $(".ce-btn-m2-code").on('click',function(event){
+            event.preventDefault();
+            event.stopPropagation();
+            $(this).css("display","none");
+        });
+        $(".ce-btn-m2-code img").on('click',function(event){
+            event.preventDefault();
+            event.stopPropagation();
+        });
 
-    //侧边栏
-    $(".ce-btns").mouseover(function(){
-        $(this).css({color:"#a55c3f"}).siblings().css({});
-        $(".ce-btns .Alert").eq($(this).index()).show();
-    });
-    $(".ce-btns").mouseleave(function(){
-        $(this).css({background:"",color:""});
-        $(".ce-btns .Alert").eq($(this).index()).hide();
-    });
+        //返回顶部
+        $(".ce-btn-m3").click(function() {
+            $("html,body").animate({scrollTop:0}, 500);
+        });
+
+        //侧边栏
+        $(".ce-btns").mouseover(function(){
+            $(this).css({color:"#a55c3f"}).siblings().css({});
+            $(".ce-btns .Alert").eq($(this).index()).show();
+        });
+        $(".ce-btns").mouseleave(function(){
+            $(this).css({background:"",color:""});
+            $(".ce-btns .Alert").eq($(this).index()).hide();
+        });
 
         var swiper = new Swiper('.swiper-container', {
             autoplay:true,
@@ -487,5 +499,6 @@
             },
         });
 //        setInterval("swiper.slidePrev()",1000);
+    })
 </script>
 </body>
