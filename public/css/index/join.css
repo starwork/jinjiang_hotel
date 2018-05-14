@@ -42,7 +42,7 @@
 .bd_l{width:65%;}
 .bd_r{width:35%;}
 .left_box{width:40%;float:left;margin-right:10%;margin-top:16%;margin-bottom: 14%;}
-.right_box{width:50%;float:left;padding:2% 0;}
+.right_box{width:50%;float:left;padding:2% 0;over-flow:hidden;}
 .left_box h1,.right_box h1{font-size:56px;}
 .left_box p{width:50%;float:left;}
 .left_box p span{line-height:2rem;}
@@ -358,5 +358,19 @@ padding: 2rem 0;
     }
     .qiniuniu>a>img {
         width: 32px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .border>div>p{
+        font-size: 12px;
+    }
+    .join_right>div>span{
+        font-size: 12px;
+    }
+    .left_box p{
+        font-size: 14px;
+    }
+    .ttt p{
+        font-size: 12px;
     }
 }
