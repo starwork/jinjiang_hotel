@@ -949,6 +949,13 @@ input{outline:none;}
 	width:200px;
 }
 
+@media screen and (min-width: 1440px) {
+    .qrcode-con-item:nth-child(2)>img {
+        width:198px;
+        margin-top: 4px;
+    }
+}
+
 /*form*/
 .center{
     justify-content: center;
