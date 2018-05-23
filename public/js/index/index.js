@@ -1,4 +1,46 @@
 $(function() {
+    //img-loading
+    var img = new Image();
+    img.src = "../../img/index/hotel1.png";
+    img.onload = function() {
+        console.log("加载完成");
+        $(".loadimg1").each(function(){
+            $(this).css("background-image","url(../img/index/hotel1.png)");
+        });
+    };
+    var img2 = new Image();
+    img2.src = "../../img/index/hotel6.png";
+    img2.onload = function() {
+        console.log("加载完成");
+        $(".loadimg2").each(function(){
+            $(this).css("background-image","url(../img/index/hotel6.png)");
+        });
+    };
+    var img3 = new Image();
+    img3.src = "../../img/index/hotel3.png";
+    img3.onload = function() {
+        console.log("加载完成");
+        $(".loadimg3").each(function(){
+            $(this).css("background-image","url(../img/index/hotel3.png)");
+        });
+    };
+    var img4 = new Image();
+    img4.src = "../../img/index/hotel4.png";
+    img4.onload = function() {
+        console.log("加载完成");
+        $(".loadimg4").each(function(){
+            $(this).css("background-image","url(../img/index/hotel4.png)");
+        });
+    };
+    var img5 = new Image();
+    img5.src = "../../img/index/hotel7.jpg";
+    img5.onload = function() {
+        console.log("加载完成");
+        $(".loadimg5").each(function(){
+            $(this).css("background-image","url(../img/index/hotel7.jpg)");
+        });
+    };
+
     // nav 
     $(".nav_btn").on('click', function(event) {
         event.preventDefault();
