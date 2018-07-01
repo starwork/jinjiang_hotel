@@ -143,7 +143,7 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__PUBLIC__' => '/',
+        '__PUBLIC__' => '/jinjiang_hotel/public/',
         '__UPLOAD__' => '/upload',
     ],
     // 默认跳转页面对应的模板文件

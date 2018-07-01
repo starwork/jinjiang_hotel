@@ -66,7 +66,7 @@ $(function() {
                 if (this.activeIndex == 3) {
                     $(".var-num1").numberRock({
                         speed: 10,
-                        count: 138
+                        count: 150
                     });
                     $(".var-num2").numberRock({
                         speed: 10,
